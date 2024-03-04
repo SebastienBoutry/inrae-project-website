@@ -1,0 +1,9 @@
+---
+title: "Publications"
+---
+
+List of publications (based on HAL-INRAE)
+
+```{r}
+## API call to HAL
+```
