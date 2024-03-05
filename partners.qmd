@@ -2,5 +2,7 @@
 title: "Partners"
 ---
 
-List of partners
+## List of Scientific partners
+
+## List of Financial partners
 

@@ -1,7 +1,16 @@
 ---
 title: "Home"
+params: 
+  project_name_hal: "DYLAQ"
+bibliography: bibliography.bib
 ---
+
 
 This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+@Carayon_2024
+
+## News
+

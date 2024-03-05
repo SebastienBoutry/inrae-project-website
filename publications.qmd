@@ -1,9 +1,78 @@
 ---
 title: "Publications"
+bibliography: API_HAL_project.bib
+params:
+  project_name_hal: "code_project"
+nocite: |
+  @*
 ---
 
-List of publications (based on HAL-INRAE)
 
-```{r}
+```{r echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE, error=FALSE, include=FALSE, results="asis"}
+library(httr2)
+library(readr)
+library(bibtex)
+library(bib2df)
+
+project <- params$project_name_hal
 ## API call to HAL
+request_project <- paste0("https://api.archives-ouvertes.fr/search/?q=*","&fq=collaboration_s:",project,
+                          "&rows=10000&wt=bibtex")
+req<-request(request_project) |>
+  req_perform() 
+
+if(length(req$body)>0){
+  req |> 
+    resp_body_string() |>
+    unlist() |>
+    write_lines("API_HAL_project.bib",append=TRUE)
+}else{
+  # print("no publications based on HAL-INRAE")
+}
 ```
+
+
+
+## List of publications (based on HAL-INRAE)
+
+::: {#refs}
+:::
+
+---
+
+## WordCloud of keywords's publications
+
+```{r keywords, echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE, results="asis"}
+df_refs <-bib2df::bib2df("API_HAL_project.bib") |> 
+  tibble::as_tibble()
+
+if(nrow(df_refs)>0){
+  tibble::tibble(keywords=df_refs |> 
+                   dplyr::filter(! is.na(KEYWORDS)) |> 
+                   dplyr::pull(KEYWORDS) |> 
+                   stringr::str_to_upper() |> 
+                   paste0(collapse = " ; ") |> 
+                   stringr::str_split(";") |> 
+                   unlist() |> 
+                   stringr::str_trim()) |> 
+    dplyr::count(keywords) |> 
+    wordcloud2::wordcloud2(backgroundColor="#275662",
+                           size=0.2,
+                           color="white",
+                           minRotation = -pi/6,
+                           maxRotation = -pi/6)
+}else{
+  print("no publications based on HAL-INRAE")
+}
+```
+
+<!-- ```{r} -->
+<!--     file.name <- "API_HAL.bib" -->
+<!--     bib <- suppressMessages(ReadBib(file.name)) -->
+<!--     BibOptions(sorting = "none") -->
+<!--     bib -->
+<!--     sort(bib, sorting = "nyt") -->
+<!--     sort(bib, sorting = "ynt") -->
+<!--     BibOptions(restore.defaults = TRUE) -->
+<!-- ``` -->
+

@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -97,6 +117,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About the project</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./events.qmd"> 
+<span class="menu-text">Events</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
@@ -106,6 +130,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.inrae.fr/"> <i class="bi bi-bookmark-star-fill" role="img">
+</i> 
+<span class="menu-text">INRAE</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://github.com/"> <i class="bi bi-git" role="img">
 </i> 
@@ -128,7 +157,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#news" id="toc-news" class="nav-link active" data-scroll-target="#news">News</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -154,10 +189,19 @@ ul.task-list li input[type="checkbox"] {
 
 <p>This is a Quarto website.</p>
 <p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<p><span class="citation" data-cites="Carayon_2024">Carayon and Boutry (<a href="#ref-Carayon_2024" role="doc-biblioref">2024</a>)</span></p>
+<section id="news" class="level2">
 
 
 
-</main> <!-- /main -->
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">News</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Carayon_2024" class="csl-entry" role="listitem">
+Carayon, David, and Sébastien Boutry. 2024. <em>InraeThemes: Modèles Et Thèmes INRAE</em>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

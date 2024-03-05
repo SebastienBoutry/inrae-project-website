@@ -11,20 +11,48 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nCarayon and Boutry (2024)"
   },
   {
     "objectID": "partners.html",
     "href": "partners.html",
     "title": "Partners",
     "section": "",
-    "text": "List of partners"
+    "text": "List of Scientific partners\nList of Financial partners"
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "List of publications (based on HAL-INRAE)\n\n## API call to HAL"
+    "text": "Bertrin, Vincent, Sébastien Boutry, Mélissa Eon, Gwilherm Jan, Débora Millan-Navarro, Sylvia Moreira, and Aurélien Jamoneau. 2022. “Suivis des restaurations hydromorphologiques en plans d’eau - Suivi des biotopes et des communautés végétales aquatiques.” In CLE COPIL N2000 Lacs médocains. Lacanau, France. https://hal.inrae.fr/hal-03722744.\n\n\nBertrin, Vincent, Sébastien Boutry, Aurélien Jamoneau, Gwilherm Jan, Sylvia Moreira, and Cristina Ribaudo. 2022. “Impact des altérations anthropiques de l’hydromorphologie des zones littorales lacustres sur les communautés d’isoétides.” In 5e Journées internationales de Limnologie et d’Océanographie (JILO). Corte (Corse), France: AFL. https://hal.inrae.fr/hal-04013980.\n\n\nBlanquart, Estelle-Marie, Aurélien Jamoneau, and Olivier Lepais. 2023. “Genetic and taxonomic diversity of Aquitaine coast lakes isoetid communities.” Freshwater Biological Association; 13th Symposium for European Freshwater Sciences. https://hal.inrae.fr/hal-04207311."
+  },
+  {
+    "objectID": "partners.html#list-of-financial-partners",
+    "href": "partners.html#list-of-financial-partners",
+    "title": "Partners",
+    "section": "List of Financial partners",
+    "text": "List of Financial partners"
+  },
+  {
+    "objectID": "publications.html#list-of-publications-based-on-hal-inrae",
+    "href": "publications.html#list-of-publications-based-on-hal-inrae",
+    "title": "Publications",
+    "section": "",
+    "text": "Bertrin, Vincent, Sébastien Boutry, Mélissa Eon, Gwilherm Jan, Débora Millan-Navarro, Sylvia Moreira, and Aurélien Jamoneau. 2022. “Suivis des restaurations hydromorphologiques en plans d’eau - Suivi des biotopes et des communautés végétales aquatiques.” In CLE COPIL N2000 Lacs médocains. Lacanau, France. https://hal.inrae.fr/hal-03722744.\n\n\nBertrin, Vincent, Sébastien Boutry, Aurélien Jamoneau, Gwilherm Jan, Sylvia Moreira, and Cristina Ribaudo. 2022. “Impact des altérations anthropiques de l’hydromorphologie des zones littorales lacustres sur les communautés d’isoétides.” In 5e Journées internationales de Limnologie et d’Océanographie (JILO). Corte (Corse), France: AFL. https://hal.inrae.fr/hal-04013980.\n\n\nBlanquart, Estelle-Marie, Aurélien Jamoneau, and Olivier Lepais. 2023. “Genetic and taxonomic diversity of Aquitaine coast lakes isoetid communities.” Freshwater Biological Association; 13th Symposium for European Freshwater Sciences. https://hal.inrae.fr/hal-04207311."
+  },
+  {
+    "objectID": "publications.html#wordcloud-of-keywordss-publications",
+    "href": "publications.html#wordcloud-of-keywordss-publications",
+    "title": "Publications",
+    "section": "WordCloud of keywords’s publications",
+    "text": "WordCloud of keywords’s publications"
+  },
+  {
+    "objectID": "index.html#news",
+    "href": "index.html#news",
+    "title": "Home",
+    "section": "News",
+    "text": "News\n\npopo\n\nSoizic\nchef"
   }
 ]
