@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nUse package InraeTheme (Carayon and Boutry 2024)"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nBibliography citations are inserted using a bibliography in bibtex format. We need to amend the bibliography.bib file in bibtex format to cite the references in our page, using [@reference] .\nExample : Use package InraeTheme (Carayon and Boutry 2024)"
   },
   {
     "objectID": "partners.html",
@@ -25,7 +25,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "NULL"
+    "text": "This web page uses the HAL API to retrieve the project’s bibliographic references. To do this, you need to enter the following two parameters (hal_project_name and hal_collection) in the YAML. The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field."
   },
   {
     "objectID": "partners.html#list-of-financial-partners",
@@ -39,14 +39,14 @@
     "href": "publications.html#list-of-publications-based-on-hal-inrae",
     "title": "Publications",
     "section": "List of publications (based on HAL-INRAE)",
-    "text": "List of publications (based on HAL-INRAE)"
+    "text": "List of publications (based on HAL-INRAE)\n\n\nBertrin, Vincent. 2020. “Impacts des changements globaux sur les ressources en eau et les milieux aquatiques.” In Journées Information Eaux 2020. Poitiers, France: APTEN. https://hal.inrae.fr/hal-03052703.\n\n\nBertrin, Vincent, Sébastien Boutry, Aurélien Jamoneau, Gwilherm Jan, Sylvia Moreira, and Cristina Ribaudo. 2021. “L’eau : un exemple de contribution scientifique alimentant la prise de décision et l’évaluation - Les communautés végétales aquatiques.” In Les grandes rencontres du Parc naturel régional Médoc. Carcans, France. https://hal.inrae.fr/hal-04013933.\n\n\nChaumet, Betty, Nicolas Mazzella, Julie Neury-Ormanni, and Soizic Morin. 2020. “Light and temperature influence on diuron bioaccumulation and toxicity in biofilms.” Ecotoxicology 29: 185–95. https://doi.org/10.1007/s10646-020-02166-8.\n\n\nDerot, J., Aurélien Jamoneau, Nils Teichert, Juliette Tison-Rosebery, Soizic Morin, and Christophe Laplace-Treyture. 2020. “Response of phytoplankton traits to environmental variables in French lakes: New perspectives for bioindication.” Ecological Indicators 108: 105659. https://doi.org/10.1016/j.ecolind.2019.105659.\n\n\nJamoneau, Aurélien, L. Bouraï, L. Devreux, L. Percaille, A. Queau, and Vincent Bertrin. 2018. “Les changements paysagers dans les bassins versants des lacs et étangs du littoral aquitain : Influence sur les communautés de macrophytes.” Journées techniques La chaîne des Lacs et étangs du littoral aquitain. Un territoire unique, l’implication de tous. https://hal.inrae.fr/hal-02608382.\n\n\nJamoneau, Aurélien, Sébastien Boutry, Jacky Vedrenne, Nicolas Mazzella, David Funosas-Planas, and Guillaume Bourguetou. 2019. “Dynamiques écologiques des lacs du littoral aquitain – physico-chimie du lac de Parentis-Biscarrosse.” Dynamiques Environnementales - Journal International Des géosciences Et de l’environnement, no. 43-44 (October): 225–43. https://doi.org/10.4000/dynenviron.5234.\n\n\nJamoneau, Aurélien, Lise Devreux, Louise Percaille, Audrey Queau, and Vincent Bertrin. 2021. “Influence of historical landscape on aquatic plant diversity.” Journal of Vegetation Science 32 (1): e12839. https://doi.org/10.1111/jvs.12839.\n\n\nLaplace-Treyture, Christophe, Jonathan Derot, Emilie Prévost, Anne Le Mat, and Aurélien Jamoneau. 2021. “Phytoplankton morpho-functional trait dataset from French water-bodies.” Scientific Data  8 (40): 9 p. https://doi.org/10.1038/s41597-021-00814-0.\n\n\nMorin, Soizic, Arnaud Chaumot, Olivier Geffard, Adeline François, Aurélien Jamoneau, Gwilherm Jan, Julie Neury-Ormanni, Jacky Vedrenne, and Margot Wagner. 2022. “Dynamiques écologiques temporelles des lacs du littoral aquitain - DYLAQ. Tome 4 : Interactions biologiques et impacts écotoxicologiques.” Research Report. INRAE UR EABX. https://hal.inrae.fr/hal-03602225.\n\n\nNeury-Ormanni, Julie, Caroline Doose, Nabil Majdi, Jacky Vedrenne, Walter Traunspurger, and Soizic Morin. 2020a. “Selective grazing behaviour of chironomids on microalgae under pesticide pressure.” Science of the Total Environment 730 (August): 138673. https://doi.org/10.1016/j.scitotenv.2020.138673.\n\n\n———. 2020b. “Does pesticide pressure affect the grazing behaviour of chironomids on microalgae?” In EcotoxicoMic 2020 - Second International Conference on Microbial Ecotoxicology. virtual conference, France. https://hal.science/hal-03136762.\n\n\nNeury-Ormanni, Julie, Jacky Vedrenne, and Soizic Morin. 2020. “Benthic diatom growth kinetics under combined pressures of microalgal competition, predation and chemical stressors.” Science of the Total Environment 734 (September): 139484. https://doi.org/10.1016/j.scitotenv.2020.139484.\n\n\nNeury-Ormanni, Julie, Jacky Vedrenne, Margot Wagner, Gwilherm Jan, and Soizic Morin. 2020. “Micro-meiofauna morphofunctional traits linked to trophic activity.” Hydrobiologia 847 (12): 2725–36. https://doi.org/10.1007/s10750-019-04120-0.\n\n\nRibaudo, Cristina, Pierre Anschutz, Florent Arthaud, Pascal Bartout, Vincent Bertrin, G. Bourguetou, Yohana Cabaret, et al. 2021. Les plans d’eau face aux changements climatiques. Cahier Thématique n1. Acclimaterra. https://hal.inrae.fr/hal-03484549.\n\n\nRibaudo, Cristina, and Vincent Bertrin. 2022. “Les plans d’eau, des alliés face au changement climatique.” In Salon Plan Climat. Parentis-en-Born, France: Communauté de Communes des Grands Lacs. https://hal.inrae.fr/hal-04016128.\n\n\nRocha, Barbbara Silva, Maxime Logez, Aurélien Jamoneau, and Christine Argillier. 2023. “Assessing resilience and sensitivity patterns for fish and phytoplankton in French lakes.” Global Ecology and Conservation 43 (April): e02458. https://doi.org/10.1016/j.gecco.2023.e02458.\n\n\nVedrenne, Jacky, and Aurélien Jamoneau. 2018. “Biofilm on macrophytes: What about Micro-meiofauna?” La chaîne des lacs et étangs du littoral aquitain. https://hal.inrae.fr/hal-02608504."
   },
   {
     "objectID": "publications.html#wordcloud-of-keywordss-publications",
     "href": "publications.html#wordcloud-of-keywordss-publications",
     "title": "Publications",
     "section": "WordCloud of keywords’s publications",
-    "text": "WordCloud of keywords’s publications\n[1] “no publications based on HAL-INRAE”"
+    "text": "WordCloud of keywords’s publications"
   },
   {
     "objectID": "index.html#news",
@@ -54,5 +54,12 @@
     "title": "Home",
     "section": "News",
     "text": "News\n\npopo\n\nSoizic\nchef"
+  },
+  {
+    "objectID": "index.html#popopo",
+    "href": "index.html#popopo",
+    "title": "Home",
+    "section": "popopo",
+    "text": "popopo\n\npopipi\npopo This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nUse package InraeTheme (Carayon and Boutry 2024)"
   }
 ]

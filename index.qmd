@@ -10,7 +10,12 @@ This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
+Bibliography citations are inserted using a bibliography in bibtex format. We need to amend the bibliography.bib file in bibtex format to cite the references in our page, using ```[@reference]``` .
+
+Example :
 Use package InraeTheme [@Carayon_2024]
 
 ## News
+
+
 

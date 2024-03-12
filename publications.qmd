@@ -2,10 +2,14 @@
 title: "Publications"
 bibliography: API_HAL_project.bib
 params:
-  project_name_hal: "code_project"
+  hal_project_name: "DYLAQ"
+  hal_collection: "EABX"
 nocite: |
   @*
 ---
+
+This web page uses the HAL API to retrieve the project's bibliographic references. To do this, you need to enter the following two parameters (hal_project_name and hal_collection) in the YAML. 
+The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field.
 
 
 ```{r echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE, error=FALSE, include=FALSE, results="asis"}
@@ -14,20 +18,20 @@ library(readr)
 library(bibtex)
 library(bib2df)
 
-project <- params$project_name_hal
 ## API call to HAL
-request_project <- paste0("https://api.archives-ouvertes.fr/search/?q=*","&fq=collaboration_s:",project,
+request_project <- paste0("https://api.archives-ouvertes.fr/search/?q=*","&fq=collaboration_s:",params$hal_project_name,
+                          "&fq=collCode_s:",params$hal_collection,
                           "&rows=10000&wt=bibtex")
 req<-request(request_project) |>
   req_perform() 
 
 if(length(req$body)>0){
+  remove(list = "API_HAL_project.bib")
   req |> 
     resp_body_string() |>
     unlist() |>
     write_lines("API_HAL_project.bib")
 }else{
-  # print("no publications based on HAL-INRAE")
 }
 ```
 
@@ -68,13 +72,5 @@ if(nrow(df_refs)>0){
 }else{ print("no publications based on HAL-INRAE")}
 ```
 
-<!-- ```{r} -->
-<!--     file.name <- "API_HAL.bib" -->
-<!--     bib <- suppressMessages(ReadBib(file.name)) -->
-<!--     BibOptions(sorting = "none") -->
-<!--     bib -->
-<!--     sort(bib, sorting = "nyt") -->
-<!--     sort(bib, sorting = "ynt") -->
-<!--     BibOptions(restore.defaults = TRUE) -->
-<!-- ``` -->
+
 

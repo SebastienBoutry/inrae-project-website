@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -85,6 +86,11 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet">
+<script src="site_libs/wordcloud2-0.0.1/wordcloud2-all.js"></script>
+<script src="site_libs/wordcloud2-0.0.1/hover.js"></script>
+<script src="site_libs/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -187,25 +193,68 @@ div.csl-indent {
 </header>
 
 
+<p>This web page uses the HAL API to retrieve the project’s bibliographic references. To do this, you need to enter the following two parameters (hal_project_name and hal_collection) in the YAML. The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field.</p>
 <section id="list-of-publications-based-on-hal-inrae" class="level2">
 <h2 class="anchored" data-anchor-id="list-of-publications-based-on-hal-inrae">List of publications (based on HAL-INRAE)</h2>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bertrin:hal-03052703" class="csl-entry" role="listitem">
+Bertrin, Vincent. 2020. <span>“<span class="nocase">Impacts des changements globaux sur les ressources en eau et les milieux aquatiques</span>.”</span> In <em><span class="nocase">Journ<span class="nocase">é</span>es Information Eaux 2020</span></em>. Poitiers, France: <span>APTEN</span>. <a href="https://hal.inrae.fr/hal-03052703">https://hal.inrae.fr/hal-03052703</a>.
+</div>
+<div id="ref-bertrin:hal-04013933" class="csl-entry" role="listitem">
+Bertrin, Vincent, Sébastien Boutry, Aurélien Jamoneau, Gwilherm Jan, Sylvia Moreira, and Cristina Ribaudo. 2021. <span>“<span class="nocase">L’eau : un exemple de contribution scientifique alimentant la prise de d<span class="nocase">é</span>cision et l’<span class="nocase">é</span>valuation - Les communaut<span class="nocase">é</span>s v<span class="nocase">é</span>g<span class="nocase">é</span>tales aquatiques</span>.”</span> In <em><span class="nocase">Les grandes rencontres du Parc naturel r<span class="nocase">é</span>gional M<span class="nocase">é</span>doc</span></em>. Carcans, France. <a href="https://hal.inrae.fr/hal-04013933">https://hal.inrae.fr/hal-04013933</a>.
+</div>
+<div id="ref-chaumet:hal-02610164" class="csl-entry" role="listitem">
+Chaumet, Betty, Nicolas Mazzella, Julie Neury-Ormanni, and Soizic Morin. 2020. <span>“<span class="nocase">Light and temperature influence on diuron bioaccumulation and toxicity in biofilms</span>.”</span> <em><span>Ecotoxicology</span></em> 29: 185–95. <a href="https://doi.org/10.1007/s10646-020-02166-8">https://doi.org/10.1007/s10646-020-02166-8</a>.
+</div>
+<div id="ref-derot:hal-02609818" class="csl-entry" role="listitem">
+Derot, J., Aurélien Jamoneau, Nils Teichert, Juliette Tison-Rosebery, Soizic Morin, and Christophe Laplace-Treyture. 2020. <span>“<span class="nocase">Response of phytoplankton traits to environmental variables in French lakes: New perspectives for bioindication</span>.”</span> <em><span>Ecological Indicators</span></em> 108: 105659. <a href="https://doi.org/10.1016/j.ecolind.2019.105659">https://doi.org/10.1016/j.ecolind.2019.105659</a>.
+</div>
+<div id="ref-jamoneau:hal-02608382" class="csl-entry" role="listitem">
+Jamoneau, Aurélien, L. Bouraï, L. Devreux, L. Percaille, A. Queau, and Vincent Bertrin. 2018. <span>“<span class="nocase">Les changements paysagers dans les bassins versants des lacs et <span class="nocase">é</span>tangs du littoral aquitain : Influence sur les communaut<span class="nocase">é</span>s de macrophytes</span>.”</span> <span>Journ<span>é</span>es techniques La cha<span>î</span>ne des Lacs et <span>é</span>tangs du littoral aquitain. Un territoire unique, l’implication de tous</span>. <a href="https://hal.inrae.fr/hal-02608382">https://hal.inrae.fr/hal-02608382</a>.
+</div>
+<div id="ref-jamoneau:hal-04406201" class="csl-entry" role="listitem">
+Jamoneau, Aurélien, Sébastien Boutry, Jacky Vedrenne, Nicolas Mazzella, David Funosas-Planas, and Guillaume Bourguetou. 2019. <span>“<span class="nocase">Dynamiques <span class="nocase">é</span>cologiques des lacs du littoral aquitain – physico-chimie du lac de Parentis-Biscarrosse</span>.”</span> <em><span>Dynamiques Environnementales - Journal International Des g<span>é</span>osciences Et de l’environnement</span></em>, no. 43-44 (October): 225–43. <a href="https://doi.org/10.4000/dynenviron.5234">https://doi.org/10.4000/dynenviron.5234</a>.
+</div>
+<div id="ref-jamoneau:hal-02370562" class="csl-entry" role="listitem">
+Jamoneau, Aurélien, Lise Devreux, Louise Percaille, Audrey Queau, and Vincent Bertrin. 2021. <span>“<span class="nocase">Influence of historical landscape on aquatic plant diversity</span>.”</span> <em><span>Journal of Vegetation Science</span></em> 32 (1): e12839. <a href="https://doi.org/10.1111/jvs.12839">https://doi.org/10.1111/jvs.12839</a>.
+</div>
+<div id="ref-laplacetreyture:hal-03142081" class="csl-entry" role="listitem">
+Laplace-Treyture, Christophe, Jonathan Derot, Emilie Prévost, Anne Le Mat, and Aurélien Jamoneau. 2021. <span>“<span class="nocase">Phytoplankton morpho-functional trait dataset from French water-bodies</span>.”</span> <em><span>Scientific Data </span></em> 8 (40): 9 p. <a href="https://doi.org/10.1038/s41597-021-00814-0">https://doi.org/10.1038/s41597-021-00814-0</a>.
+</div>
+<div id="ref-morin:hal-03602225" class="csl-entry" role="listitem">
+Morin, Soizic, Arnaud Chaumot, Olivier Geffard, Adeline François, Aurélien Jamoneau, Gwilherm Jan, Julie Neury-Ormanni, Jacky Vedrenne, and Margot Wagner. 2022. <span>“<span class="nocase">Dynamiques <span class="nocase">é</span>cologiques temporelles des lacs du littoral aquitain - DYLAQ. Tome 4 : Interactions biologiques et impacts <span class="nocase">é</span>cotoxicologiques</span>.”</span> Research Report. <span>INRAE UR EABX</span>. <a href="https://hal.inrae.fr/hal-03602225">https://hal.inrae.fr/hal-03602225</a>.
+</div>
+<div id="ref-neuryormanni:hal-02733796" class="csl-entry" role="listitem">
+Neury-Ormanni, Julie, Caroline Doose, Nabil Majdi, Jacky Vedrenne, Walter Traunspurger, and Soizic Morin. 2020a. <span>“<span class="nocase">Selective grazing behaviour of chironomids on microalgae under pesticide pressure</span>.”</span> <em><span>Science of the Total Environment</span></em> 730 (August): 138673. <a href="https://doi.org/10.1016/j.scitotenv.2020.138673">https://doi.org/10.1016/j.scitotenv.2020.138673</a>.
+</div>
+<div id="ref-neuryormanni:hal-03136762" class="csl-entry" role="listitem">
+———. 2020b. <span>“<span class="nocase">Does pesticide pressure affect the grazing behaviour of chironomids on microalgae?</span>”</span> In <em><span class="nocase">EcotoxicoMic 2020 - Second International Conference on Microbial Ecotoxicology</span></em>. virtual conference, France. <a href="https://hal.science/hal-03136762">https://hal.science/hal-03136762</a>.
+</div>
+<div id="ref-neuryormanni:hal-02733710" class="csl-entry" role="listitem">
+Neury-Ormanni, Julie, Jacky Vedrenne, and Soizic Morin. 2020. <span>“<span class="nocase">Benthic diatom growth kinetics under combined pressures of microalgal competition, predation and chemical stressors</span>.”</span> <em><span>Science of the Total Environment</span></em> 734 (September): 139484. <a href="https://doi.org/10.1016/j.scitotenv.2020.139484">https://doi.org/10.1016/j.scitotenv.2020.139484</a>.
+</div>
+<div id="ref-neuryormanni:hal-02610019" class="csl-entry" role="listitem">
+Neury-Ormanni, Julie, Jacky Vedrenne, Margot Wagner, Gwilherm Jan, and Soizic Morin. 2020. <span>“<span class="nocase">Micro-meiofauna morphofunctional traits linked to trophic activity</span>.”</span> <em><span>Hydrobiologia</span></em> 847 (12): 2725–36. <a href="https://doi.org/10.1007/s10750-019-04120-0">https://doi.org/10.1007/s10750-019-04120-0</a>.
+</div>
+<div id="ref-ribaudo:hal-03484549" class="csl-entry" role="listitem">
+Ribaudo, Cristina, Pierre Anschutz, Florent Arthaud, Pascal Bartout, Vincent Bertrin, G. Bourguetou, Yohana Cabaret, et al. 2021. <em><span class="nocase">Les plans d’eau face aux changements climatiques</span></em>. Cahier Th<span>é</span>matique n<span></span>1. <span>Acclimaterra</span>. <a href="https://hal.inrae.fr/hal-03484549">https://hal.inrae.fr/hal-03484549</a>.
+</div>
+<div id="ref-ribaudo:hal-04016128" class="csl-entry" role="listitem">
+Ribaudo, Cristina, and Vincent Bertrin. 2022. <span>“<span class="nocase">Les plans d’eau, des alli<span class="nocase">é</span>s face au changement climatique</span>.”</span> In <em><span>Salon Plan Climat</span></em>. Parentis-en-Born, France: <span>Communaut<span>é</span> de Communes des Grands Lacs</span>. <a href="https://hal.inrae.fr/hal-04016128">https://hal.inrae.fr/hal-04016128</a>.
+</div>
+<div id="ref-rocha:hal-04177227" class="csl-entry" role="listitem">
+Rocha, Barbbara Silva, Maxime Logez, Aurélien Jamoneau, and Christine Argillier. 2023. <span>“<span class="nocase">Assessing resilience and sensitivity patterns for fish and phytoplankton in French lakes</span>.”</span> <em><span>Global Ecology and Conservation</span></em> 43 (April): e02458. <a href="https://doi.org/10.1016/j.gecco.2023.e02458">https://doi.org/10.1016/j.gecco.2023.e02458</a>.
+</div>
+<div id="ref-vedrenne:hal-02608504" class="csl-entry" role="listitem">
+Vedrenne, Jacky, and Aurélien Jamoneau. 2018. <span>“<span class="nocase">Biofilm on macrophytes: What about Micro-meiofauna?</span>”</span> <span>La cha<span>î</span>ne des lacs et <span>é</span>tangs du littoral aquitain</span>. <a href="https://hal.inrae.fr/hal-02608504">https://hal.inrae.fr/hal-02608504</a>.
+</div>
 </div>
 <hr>
 </section>
 <section id="wordcloud-of-keywordss-publications" class="level2">
 <h2 class="anchored" data-anchor-id="wordcloud-of-keywordss-publications">WordCloud of keywords’s publications</h2>
-<p>[1] “no publications based on HAL-INRAE”</p>
-<!-- ```{r} -->
-<!--     file.name <- "API_HAL.bib" -->
-<!--     bib <- suppressMessages(ReadBib(file.name)) -->
-<!--     BibOptions(sorting = "none") -->
-<!--     bib -->
-<!--     sort(bib, sorting = "nyt") -->
-<!--     sort(bib, sorting = "ynt") -->
-<!--     BibOptions(restore.defaults = TRUE) -->
-<!-- ``` -->
+<div class="wordcloud2 html-widget html-fill-item" id="htmlwidget-9964773cf75e7cb2d076" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-9964773cf75e7cb2d076">{"x":{"word":["ALGUE","ALT{\\'E}RATIONS ANTHROPIQUES","AQUITAINE","BIODIVERSIT{\\'E}","BIOVOLUME","CHANGEMENT CLIMATIQUE","CLIMATE WARMING","COMMUNAUT{\\'E","DIATOM BIOTIC","ECOTOXICOLOGY","ESP{\\`E}CES INVASIVES","EUTROPHICATION","EUTROPHISATION","EUTROPHISATION AQUATIQUE","FUNCTIONAL REDUNDANCY","FUNCTIONAL TRAITS","GESTION","GRAZER","INTERACTIONS","LAC","LACS AQUITAINS","LAKE","MACROPHYTE","MANAGEMENT","MEIOFAUNE","MORPHOLOGICAL TRAITS","MULTI STRESS","NEMATODE","NOUVELLE AQUITAINE","OXYG{\\`E}NE","PESTICIDE","PESTICIDE MIXTURE","PESTICIDES","PHYSICO-CHEMICAL","PHYSICO-CHIMIE","PHYTOPLANKTON","PLAN D'EAU","PLANTES AQUATIQUES","RARITY","RESERVOIRS","R{\\'E}CHAUFFEMENT CLIMATIQUE","TOXICITY","TROPHIC RELATION","VULNERABILITY"],"freq":[1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1],"fontFamily":"Segoe UI","fontWeight":"bold","color":"white","minSize":0,"weightFactor":18,"backgroundColor":"#275662","gridSize":0,"minRotation":-0.5235987755982988,"maxRotation":-0.5235987755982988,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
 
 
 </section>
