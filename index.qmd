@@ -1,7 +1,5 @@
 ---
 title: "Home"
-params: 
-  project_name_hal: "code_project"
 bibliography: bibliography.bib
 ---
 

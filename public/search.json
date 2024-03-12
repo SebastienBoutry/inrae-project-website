@@ -25,7 +25,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "This web page uses the HAL API to retrieve the project’s bibliographic references. To do this, you need to enter the following two parameters (hal_project_name and hal_collection) in the YAML. The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field."
+    "text": "This web page uses the HAL API to retrieve the project’s bibliographic references. To do this, you need to fill in the following two parameters (hal_project_name and hal_collection) in the YAML. For this request to be successful, it is important to fill in the ‘Collaboration/Project’ field when submitting to HAL with the project acronym, which will be identical to hal_project_name. The choice of limiting references linked to the project to a target collection. The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field."
   },
   {
     "objectID": "partners.html#list-of-financial-partners",

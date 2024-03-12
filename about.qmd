@@ -1,5 +1,6 @@
 ---
 title: "About"
+bibliography: bibliography.bib
 ---
 
 About this project
