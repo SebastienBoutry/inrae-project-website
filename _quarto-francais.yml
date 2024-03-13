@@ -1,0 +1,61 @@
+project:
+  output-dir: ./public
+  
+website:
+  title: "inrae-project-website"
+  page-footer:
+    left: |
+        [![](image/VALISE_LOGOTYPE/LOGO/RVB_web/Logo-INRAE.jpg){width=100px}](https://www.inrae.fr/)
+    right: |
+      ![](image/Logo_lab.png){width=100px}
+    center: 
+      - href: index.qmd
+        text: Home
+      - text: "About the project"
+        href: about.qmd
+      - href: events.qmd
+        text: "Actualités"
+      - href: publications.qmd
+        text: Publications
+      - href: partners.qmd
+        text: "Partenaires scientifiques et financiers"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About the project
+      - href: events.qmd
+        text: "Actualités"
+      - href: publications.qmd
+        text: Publications
+      - href: partners.qmd
+        text: "Partenaires scientifiques et financiers"
+    right:
+      - text: "INRAE"
+        icon: bookmark-star-fill
+        href: https://www.inrae.fr/
+      - text: "Source"
+        icon: git
+        href: https://github.com/
+      - text: "Other links"
+        icon: book
+        href: https://quarto.org
+      - href: ../fr
+        text: Français
+      - href: ../en
+        text: English
+        
+lang: fr
+
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: true
+    
+bibliography: bibliography.bib
+
+
+
+

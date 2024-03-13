@@ -1,11 +1,12 @@
 ---
-title: "Publications"
-bibliography: API_HAL_project.bib
 params:
   hal_project_name: "DYLAQ"
   hal_collection: "EABX"
 nocite: |
   @*
+bibliography: API_HAL_project.bib
+margin-header: |
+  ![](image/Logo_project.jpg)
 ---
 
 This web page uses the [HAL API](https://api.archives-ouvertes.fr/docs) to retrieve the project's bibliographic references. To do this, you need to fill in the following two parameters (hal_project_name and hal_collection) in the YAML.

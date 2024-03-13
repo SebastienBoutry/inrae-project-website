@@ -1,0 +1,13 @@
+---
+title: "Newsletter #2"
+subtitle: ""
+author: "First name, Last name"
+categories:
+  - Communication
+date: 2024-03-12
+toc: true
+image: "news_image.png"
+---
+
+
+{{< include ../../lipsum.qmd >}}

@@ -1,6 +1,10 @@
 ---
-title: "About"
 bibliography: bibliography.bib
+margin-header: |
+  ![](image/Logo_project.jpg)
 ---
 
 About this project
+
+
+{{< include lipsum.qmd >}}

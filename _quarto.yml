@@ -1,35 +1,7 @@
 project:
   type: website
-  output-dir: public
 
-website:
-  title: "inrae-project-website"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About the project
-      - href: events.qmd
-        text: Events
-      - href: publications.qmd
-        text: Publications
-      - href: partners.qmd
-        text: Partners & Sponsors
-    right:
-      - text: "INRAE"
-        icon: bookmark-star-fill
-        href: https://www.inrae.fr/
-      - text: "Source"
-        icon: git
-        href: https://github.com/
-      - text: "Other links"
-        icon: book
-        href: https://quarto.org
-format:
-  html:
-    theme: minty
-    css: styles.css
-    toc: true
-
-
+profile:
+  default: english
+  group: [english, francais]
+ 

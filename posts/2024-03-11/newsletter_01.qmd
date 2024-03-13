@@ -1,0 +1,23 @@
+---
+title: "Newsletter #1"
+subtitle: "Projet Léon-Bloom : Etude sur l’origine du développement des cyanobactéries dans l’étang de Léon"
+author: "First name, Last name"
+categories:
+  - Communication
+date: 2024-03-11
+toc: true
+image: "../../image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg"
+---
+
+
+# Les tributaires instrumentés
+
+Les différents tributaires du plan d’eau ont aussi été instrumentés. Pas d’inquiétude donc si vous voyez fleurir des étiquettes INRAE. L’objectif est de pouvoir suivre les caractéristiques physicochimiques et les débits de ces différents cours d’eau. 
+
+# Des bouées INRAE sur l’étang
+
+Le projet de recherche Léon-Bloom qui vise à essayer de comprendre l’origine des proliférations de cyanobactéries sur l’étang de Léon est lancé. Les premières campagnes de terrain se sont déroulées du 4 ou 6 mars. Des bouées ont été positionnées sur l’étang sur lesquelles des sondes de mesures d’oxygène sont accrochées. Merci donc à tous les usagers de les laisser tranquille pour ne pas perturber leur bon fonctionnement. 
+
+# A venir ...
+
+Très prochainement une plateforme supportant une station météorologique sera également positionnée sur le plan d’eau au niveau de la limite de la réserve.

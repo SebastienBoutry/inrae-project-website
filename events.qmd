@@ -1,4 +1,11 @@
 ---
 title: "Events"
 bibliography: bibliography.bib
+margin-header: |
+  ![](image/Logo_project.jpg)
+listing:
+  contents: posts
+  type: grid
+  sort: "date"
+  image-height: "2"
 ---

@@ -1,12 +1,25 @@
 ---
-title: "Home"
-bibliography: bibliography.bib
+margin-header: |
+  ![](image/Logo_project.jpg)
 ---
 
-
+::: {.content-visible when-profile="english"}
 This is a Quarto website.
-
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+
+## Logo 
+
+### Institut's logo and Laboratory's logo
+
+The institute and laboratory logos must be placed in the image directory, and the path must be entered in the _quarto.yml file.
+The institute logo is a hyperlink. When we click on it, the institute web page opens.
+
+### Project's logo
+
+If you have a project's logo, insert the image file (.png or .jpg) in the image directory. If you don't have a project's logo, simply comment out the margin-header part in YAML (Ctrl+C).
+
+## Insert bibliography
 
 Bibliography citations are inserted using a bibliography in bibtex format. We need to amend the bibliography.bib file in bibtex format to cite the references in our page, using ```[@reference]``` .
 
@@ -14,6 +27,9 @@ Example :
 Use package InraeTheme [@Carayon_2024]
 
 ## News
+:::
 
+
+---
 
 
