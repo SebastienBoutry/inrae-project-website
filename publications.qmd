@@ -25,23 +25,27 @@ params:
 
 ```{r echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE, error=FALSE, include=FALSE, results="asis"}
 library(httr2)
-library(readr)
 library(bibtex)
+library(readr)
+library(wordcloud2)
+library(tibble)
+library(stringr)
+library(dplyr)
 library(bib2df)
 
 ## API call to HAL
 request_project <- paste0("https://api.archives-ouvertes.fr/search/?q=*","&fq=collaboration_s:",params$hal_project_name,
                           "&fq=collCode_s:",params$hal_collection,
                           "&rows=10000&wt=bibtex")
-req<-request(request_project) |>
-  req_perform() 
+req<-httr2::request(request_project) |>
+  httr2::req_perform() 
 
 if(length(req$body)>0){
   remove(list = "API_HAL_project.bib")
   req |> 
-    resp_body_string() |>
+    httr2::resp_body_string() |>
     unlist() |>
-    write_lines("API_HAL_project.bib")
+    readr::write_lines("API_HAL_project.bib")
 }else{
 }
 ```
