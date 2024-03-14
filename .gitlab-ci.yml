@@ -16,6 +16,7 @@ pages:
     -  R -e "install.packages('dplyr')"
     -  R -e "install.packages('bib2df')"
     - quarto render
+  publish: docs
   artifacts:
     paths:
       - docs
