@@ -1,6 +1,8 @@
 ---
 margin-header: |
   ![](image/Logo_project.jpg)
+margin-footer: |
+  ![](image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg)
 ---
 
 ::: {.content-visible when-profile="english"}

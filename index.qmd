@@ -1,6 +1,8 @@
 ---
 margin-header: |
   ![](image/Logo_project.jpg)
+margin-footer: |
+  ![](image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg)
 ---
 
 ::: {.content-visible when-profile="english"}
@@ -26,7 +28,9 @@ Bibliography citations are inserted using a bibliography in bibtex format. We ne
 Example :
 Use package InraeTheme [@Carayon_2024]
 
-## Website
+## Creating web pages
+
+In the terminal, we send the following commands to generate web pages for the different languages.
 
 ```
 quarto render --profile english
@@ -37,7 +41,9 @@ quarto render --profile francais
 
 
 :::
-
+::: {.content-visible when-profile="francais"}
+Voir la version anglaise pour quelques explications
+:::
 
 ---
 

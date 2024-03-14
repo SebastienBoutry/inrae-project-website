@@ -11,8 +11,8 @@ website:
     center: 
       - href: index.qmd
         text: Home
-      - text: "About the project"
-        href: about.qmd
+      - href: about.qmd
+        text: "Pour en savoir plus"
       - href: events.qmd
         text: "Actualités"
       - href: publications.qmd
@@ -24,7 +24,7 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: About the project
+        text: "Pour en savoir plus"
       - href: events.qmd
         text: "Actualités"
       - href: publications.qmd
