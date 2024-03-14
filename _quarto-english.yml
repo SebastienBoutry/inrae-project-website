@@ -5,9 +5,9 @@ website:
   title: "inrae-project-website"
   page-footer:
     left: |
-        [![](image/VALISE_LOGOTYPE/LOGO/RVB_web/Logo-INRAE.jpg){width=100px}](https://www.inrae.fr/)
+        [![](image/VALISE_LOGOTYPE/LOGO/RVB_web/Logo-INRAE.jpg){width=200px}](https://www.inrae.fr/)
     right: |
-      ![](image/Logo_lab.png){width=100px}
+      ![](image/Logo_lab.png){width=200px}
     center: 
       - href: index.qmd
         text: Home
@@ -20,6 +20,7 @@ website:
       - href: partners.qmd
         text: Partners & Sponsors
   navbar:
+    logo:  image/Logo_project.jpg
     left:
       - href: index.qmd
         text: Home
@@ -41,10 +42,6 @@ website:
       - text: "Other links"
         icon: book
         href: https://quarto.org
-      - href: ../fr
-        text: Français
-      - href: ./
-        text: English
         
 lang: en
 
@@ -53,6 +50,11 @@ format:
     theme: minty
     css: styles.css
     toc: true
+    grid:
+      sidebar-width: 50px
+      body-width: 1150px
+      margin-width: 300px
+      gutter-width: 1.5rem
     
 bibliography: bibliography.bib
 

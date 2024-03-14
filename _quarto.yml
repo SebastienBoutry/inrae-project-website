@@ -1,7 +1,73 @@
 project:
   type: website
+  output-dir: ./public
+  
+website:
+  title: "inrae-project-website"
+  page-footer:
+    left: |
+        [![](image/VALISE_LOGOTYPE/LOGO/RVB_web/Logo-INRAE.jpg){width=200px}](https://www.inrae.fr/)
+    right: |
+      ![](image/Logo_lab.png){width=200px}
+    center: 
+      - href: index.qmd
+        text: Home
+      - text: "About the project"
+        href: about.qmd
+      - href: events.qmd
+        text: Events
+      - href: publications.qmd
+        text: Publications
+      - href: partners.qmd
+        text: Partners & Sponsors
+  navbar:
+    logo:  image/Logo_project.jpg
+    left:
+      - href: index.qmd
+        text: Home
+        icon: house-door-fill
+      - href: about.qmd
+        text: About the project
+        icon: house-add-fill
+        menu: 
+          - text: "Workpackage 1"
+            href: workpackage1.qmd
+          - text: "Workpackage 2"
+            href: workpackage2.qmd
+      - href: events.qmd
+        text: Events
+        icon: newspaper
+      - href: publications.qmd
+        text: Publications
+        icon: book
+      - href: partners.qmd
+        text: Partners & Sponsors
+        icon: link
+    right:
+      - text: "Source"
+        icon: git
+        href: https://github.com/
+      - text: "Other links"
+        icon: book
+        menu: 
+          - text: Quarto
+            href: https://quarto.org
+          - text: "INRAE"
+            icon: bookmark-star-fill
+            href: https://www.inrae.fr/
+        
+lang: en
 
-profile:
-  default: english
-  group: [english, francais]
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: true
+    grid:
+      sidebar-width: 50px
+      body-width: 1150px
+      margin-width: 300px
+      gutter-width: 1.5rem
+    
+bibliography: bibliography.bib
  

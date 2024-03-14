@@ -5,14 +5,6 @@ margin-footer: |
   ![](image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg)
 ---
 
-::: {.content-visible when-profile="english"}
 ## List of Scientific partners
 
 ## List of Financial partners
-:::
-
-::: {.content-visible when-profile="francais"}
-## Liste des partenaires scientifiques
-
-## Liste des partenaires financiers
-:::

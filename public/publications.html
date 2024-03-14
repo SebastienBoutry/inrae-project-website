@@ -103,6 +103,9 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./image/Logo_project.jpg" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">inrae-project-website</span>
     </a>
@@ -114,50 +117,55 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="./index.html"> <i class="bi bi-house-door-fill" role="img">
+</i> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="./about.html"> <i class="bi bi-house-add-fill" role="img">
+</i> 
 <span class="menu-text">About the project</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./events.html"> 
+    <a class="nav-link" href="./events.html"> <i class="bi bi-newspaper" role="img">
+</i> 
 <span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./publications.html" aria-current="page"> 
+    <a class="nav-link active" href="./publications.html" aria-current="page"> <i class="bi bi-book" role="img">
+</i> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./partners.html"> 
+    <a class="nav-link" href="./partners.html"> <i class="bi bi-link" role="img">
+</i> 
 <span class="menu-text">Partners &amp; Sponsors</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://www.inrae.fr/"> <i class="bi bi-bookmark-star-fill" role="img">
-</i> 
-<span class="menu-text">INRAE</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="https://github.com/"> <i class="bi bi-git" role="img">
 </i> 
 <span class="menu-text">Source</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://quarto.org"> <i class="bi bi-book" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-other-links" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-book" role="img">
 </i> 
-<span class="menu-text">Other links</span></a>
+ <span class="menu-text">Other links</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-other-links">    
+        <li>
+    <a class="dropdown-item" href="https://quarto.org">
+ <span class="dropdown-text">Quarto</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./../fr"> 
-<span class="menu-text">Français</span></a>
+        <li>
+    <a class="dropdown-item" href="https://www.inrae.fr/"><i class="bi bi-bookmark-star-fill" role="img">
+</i> 
+ <span class="dropdown-text">INRAE</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="././"> 
-<span class="menu-text">English</span></a>
-  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -190,6 +198,10 @@ div.csl-indent {
 
 
 <p>This web page uses the <a href="https://api.archives-ouvertes.fr/docs">HAL API</a> to retrieve the project’s bibliographic references. To do this, you need to fill in the following two parameters (hal_project_name and hal_collection) in the YAML. For this request to be successful, it is important to fill in the ‘Collaboration/Project’ field when submitting to HAL with the project acronym, which will be identical to hal_project_name. The choice of limiting references linked to the project to a target collection. The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field.</p>
+<p>In the following example, the parameters used in the YML are</p>
+<pre><code>params:
+  hal_project_name: "DYLAQ"
+  hal_collection: "EABX"</code></pre>
 <section id="list-of-publications-based-on-hal-inrae" class="level2">
 <h2 class="anchored" data-anchor-id="list-of-publications-based-on-hal-inrae">List of publications (based on HAL-INRAE)</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
@@ -249,8 +261,8 @@ Vedrenne, Jacky, and Aurélien Jamoneau. 2018. <span>“<span class="nocase">Bio
 </section>
 <section id="wordcloud-of-keywordss-publications" class="level2">
 <h2 class="anchored" data-anchor-id="wordcloud-of-keywordss-publications">WordCloud of keywords’s publications</h2>
-<div class="wordcloud2 html-widget html-fill-item" id="htmlwidget-7276090bc62a2c6930be" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-7276090bc62a2c6930be">{"x":{"word":["ALGUE","ALT{\\'E}RATIONS ANTHROPIQUES","AQUITAINE","BIODIVERSIT{\\'E}","BIOVOLUME","CHANGEMENT CLIMATIQUE","CLIMATE WARMING","COMMUNAUT{\\'E","DIATOM BIOTIC","ECOTOXICOLOGY","ESP{\\`E}CES INVASIVES","EUTROPHICATION","EUTROPHISATION","EUTROPHISATION AQUATIQUE","FUNCTIONAL REDUNDANCY","FUNCTIONAL TRAITS","GESTION","GRAZER","INTERACTIONS","LAC","LACS AQUITAINS","LAKE","MACROPHYTE","MANAGEMENT","MEIOFAUNE","MORPHOLOGICAL TRAITS","MULTI STRESS","NEMATODE","NOUVELLE AQUITAINE","OXYG{\\`E}NE","PESTICIDE","PESTICIDE MIXTURE","PESTICIDES","PHYSICO-CHEMICAL","PHYSICO-CHIMIE","PHYTOPLANKTON","PLAN D'EAU","PLANTES AQUATIQUES","RARITY","RESERVOIRS","R{\\'E}CHAUFFEMENT CLIMATIQUE","TOXICITY","TROPHIC RELATION","VULNERABILITY"],"freq":[1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1],"fontFamily":"Segoe UI","fontWeight":"bold","color":"white","minSize":0,"weightFactor":18,"backgroundColor":"#275662","gridSize":0,"minRotation":-0.5235987755982988,"maxRotation":-0.5235987755982988,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<div class="wordcloud2 html-widget html-fill-item" id="htmlwidget-dc6c303e735d7f492c3c" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-dc6c303e735d7f492c3c">{"x":{"word":["ALGUE","ALT{\\'E}RATIONS ANTHROPIQUES","AQUITAINE","BIODIVERSIT{\\'E}","BIOVOLUME","CHANGEMENT CLIMATIQUE","CLIMATE WARMING","COMMUNAUT{\\'E","DIATOM BIOTIC","ECOTOXICOLOGY","ESP{\\`E}CES INVASIVES","EUTROPHICATION","EUTROPHISATION","EUTROPHISATION AQUATIQUE","FUNCTIONAL REDUNDANCY","FUNCTIONAL TRAITS","GESTION","GRAZER","INTERACTIONS","LAC","LACS AQUITAINS","LAKE","MACROPHYTE","MANAGEMENT","MEIOFAUNE","MORPHOLOGICAL TRAITS","MULTI STRESS","NEMATODE","NOUVELLE AQUITAINE","OXYG{\\`E}NE","PESTICIDE","PESTICIDE MIXTURE","PESTICIDES","PHYSICO-CHEMICAL","PHYSICO-CHIMIE","PHYTOPLANKTON","PLAN D'EAU","PLANTES AQUATIQUES","RARITY","RESERVOIRS","R{\\'E}CHAUFFEMENT CLIMATIQUE","TOXICITY","TROPHIC RELATION","VULNERABILITY"],"freq":[1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1],"fontFamily":"Segoe UI","fontWeight":"bold","color":"white","minSize":0,"weightFactor":18,"backgroundColor":"#275662","gridSize":0,"minRotation":-0.5235987755982988,"maxRotation":-0.5235987755982988,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
 
 
 </section>
@@ -647,7 +659,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><a href="https://www.inrae.fr/"><img src="image/VALISE_LOGOTYPE/LOGO/RVB_web/Logo-INRAE.jpg" class="img-fluid" width="100"></a></p>
+<p><a href="https://www.inrae.fr/"><img src="image/VALISE_LOGOTYPE/LOGO/RVB_web/Logo-INRAE.jpg" class="img-fluid" width="200"></a></p>
 </div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
@@ -679,7 +691,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </ul>
     </div>
     <div class="nav-footer-right">
-<p><img src="image/Logo_lab.png" class="img-fluid" width="100"></p>
+<p><img src="image/Logo_lab.png" class="img-fluid" width="200"></p>
 </div>
   </div>
 </footer>

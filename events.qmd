@@ -9,5 +9,5 @@ listing:
   contents: posts
   type: grid
   sort: "date"
-  image-height: "2"
+  image-height: "200px"
 ---

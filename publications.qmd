@@ -11,15 +11,17 @@ margin-footer: |
   ![](image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg)
 ---
 
-::: {.content-visible when-profile="english"}
 This web page uses the [HAL API](https://api.archives-ouvertes.fr/docs) to retrieve the project's bibliographic references. To do this, you need to fill in the following two parameters (hal_project_name and hal_collection) in the YAML.
 For this request to be successful, it is important to fill in the 'Collaboration/Project' field when submitting to HAL with the project acronym, which will be identical to hal_project_name. The choice of limiting references linked to the project to a target collection.
 The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field.
-:::
 
-::: {.content-visible when-profile="francais"}
-Voir la version anglaise pour quelques explications
-:::
+In the following example, the parameters used in the YML are
+```
+params:
+  hal_project_name: "DYLAQ"
+  hal_collection: "EABX"
+```
+
 
 ```{r echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE, error=FALSE, include=FALSE, results="asis"}
 library(httr2)

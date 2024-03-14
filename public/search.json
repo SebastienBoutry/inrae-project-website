@@ -18,7 +18,7 @@
     "href": "publications.html",
     "title": "inrae-project-website",
     "section": "",
-    "text": "This web page uses the HAL API to retrieve the project’s bibliographic references. To do this, you need to fill in the following two parameters (hal_project_name and hal_collection) in the YAML. For this request to be successful, it is important to fill in the ‘Collaboration/Project’ field when submitting to HAL with the project acronym, which will be identical to hal_project_name. The choice of limiting references linked to the project to a target collection. The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field."
+    "text": "This web page uses the HAL API to retrieve the project’s bibliographic references. To do this, you need to fill in the following two parameters (hal_project_name and hal_collection) in the YAML. For this request to be successful, it is important to fill in the ‘Collaboration/Project’ field when submitting to HAL with the project acronym, which will be identical to hal_project_name. The choice of limiting references linked to the project to a target collection. The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field.\nIn the following example, the parameters used in the YML are"
   },
   {
     "objectID": "publications.html#list-of-publications-based-on-hal-inrae",
@@ -53,14 +53,14 @@
     "href": "about.html",
     "title": "inrae-project-website",
     "section": "",
-    "text": "About this project\nAbout this project\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "text": "About this project\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "inrae-project-website",
     "section": "",
-    "text": "This is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites.\nCreating a French and English website is possible, but requires some special handling. First, you’ll need to create _quarto-langue.yml for each language and a master _quarto.yml.\nThen, in the web pages, specify the language via"
   },
   {
     "objectID": "index.html#logo",
@@ -77,11 +77,11 @@
     "text": "Insert bibliography\nBibliography citations are inserted using a bibliography in bibtex format. We need to amend the bibliography.bib file in bibtex format to cite the references in our page, using [@reference] .\nExample : Use package InraeTheme (Carayon and Boutry 2024)"
   },
   {
-    "objectID": "index.html#website",
-    "href": "index.html#website",
+    "objectID": "index.html#creating-web-pages",
+    "href": "index.html#creating-web-pages",
     "title": "inrae-project-website",
-    "section": "Website",
-    "text": "Website\nIn the terminal, we send the following commands to generate web pages for the different languages.\nquarto render --profile english\nquarto render --profile francais"
+    "section": "Creating web pages",
+    "text": "Creating web pages\nIn the terminal, we send the following commands to generate web pages for the different languages.\nFirst run with _quarto-english.yml\noutput-dir: ./public/en\nnavbar\n  - href: ../en\nquarto render --profile english\nquarto render --profile francais\nIn a second step, modify the quarto_english.yml output-dir: ./public/en to output-dir: ./public and in the navbar - href: ../en to - href: ./\nSecond run with _quarto-english.yml\noutput-dir: ./public\nnavbar\n  - href: ./"
   },
   {
     "objectID": "index.html#news",
@@ -96,12 +96,5 @@
     "title": "Newsletter #2",
     "section": "",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "objectID": "index.html#creating-web-pages",
-    "href": "index.html#creating-web-pages",
-    "title": "inrae-project-website",
-    "section": "Creating web pages",
-    "text": "Creating web pages\nIn the terminal, we send the following commands to generate web pages for the different languages.\nquarto render --profile english\nquarto render --profile francais"
   }
 ]

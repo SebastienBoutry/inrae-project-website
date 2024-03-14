@@ -5,12 +5,7 @@ margin-header: |
 margin-footer: |
   ![](image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg)
 ---
-::: {.content-visible when-profile="english"}
-About this project
-:::
-::: {.content-visible when-profile="francais"}
-Voir la version anglaise pour quelques explications
-:::
+
 About this project
 
 
