@@ -156,11 +156,27 @@ window.Quarto = {
 </i> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> <i class="bi bi-house-add-fill" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-the-project" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-house-add-fill" role="img">
 </i> 
-<span class="menu-text">About the project</span></a>
+ <span class="menu-text">About the project</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about-the-project">    
+        <li>
+    <a class="dropdown-item" href="./about.html">
+ <span class="dropdown-text">About the project</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./workpackage1.html">
+ <span class="dropdown-text">Workpackage 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./workpackage2.html">
+ <span class="dropdown-text">Workpackage 2</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link active" href="./events.html" aria-current="page"> <i class="bi bi-newspaper" role="img">
 </i> 
@@ -195,12 +211,15 @@ window.Quarto = {
  <span class="dropdown-text">Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://www.inrae.fr/"><i class="bi bi-bookmark-star-fill" role="img">
-</i> 
+    <a class="dropdown-item" href="https://www.inrae.fr/">
  <span class="dropdown-text">INRAE</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./licence.html"> 
+<span class="menu-text">Licence</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">

@@ -8,5 +8,19 @@ margin-footer: |
 
 About this project
 
+{{< include lipsum.qmd >}}
+
+```{mermaid}
+
+flowchart LR
+    DB[(Database)]
+    Workpackage1-->DB
+    Workpackage2-->DB
+    DB-->Workpackage3
+    style DB fill:#275662,stroke-width:2px,color:#fff
+    style Workpackage1 fill:#66C1BF,stroke-width:2px,color:#fff
+    style Workpackage2 fill:#66C1BF,stroke-width:2px,color:#fff
+    style Workpackage3 fill:#66C1BF,stroke-width:2px,color:#fff
+```
 
 {{< include lipsum.qmd >}}

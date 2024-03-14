@@ -1,17 +1,73 @@
 [
   {
-    "objectID": "posts/2024-03-11/newsletter_01.html",
-    "href": "posts/2024-03-11/newsletter_01.html",
-    "title": "Newsletter #1",
+    "objectID": "workpackage1.html",
+    "href": "workpackage1.html",
+    "title": "Description of the workpackage",
     "section": "",
-    "text": "Les tributaires instrumentés\nLes différents tributaires du plan d’eau ont aussi été instrumentés. Pas d’inquiétude donc si vous voyez fleurir des étiquettes INRAE. L’objectif est de pouvoir suivre les caractéristiques physicochimiques et les débits de ces différents cours d’eau.\n\n\nDes bouées INRAE sur l’étang\nLe projet de recherche Léon-Bloom qui vise à essayer de comprendre l’origine des proliférations de cyanobactéries sur l’étang de Léon est lancé. Les premières campagnes de terrain se sont déroulées du 4 ou 6 mars. Des bouées ont été positionnées sur l’étang sur lesquelles des sondes de mesures d’oxygène sont accrochées. Merci donc à tous les usagers de les laisser tranquille pour ne pas perturber leur bon fonctionnement.\n\n\nA venir …\nTrès prochainement une plateforme supportant une station météorologique sera également positionnée sur le plan d’eau au niveau de la limite de la réserve."
+    "text": "Description of the workpackage\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "objectID": "partners.html#list-of-financial-partners",
-    "href": "partners.html#list-of-financial-partners",
+    "objectID": "posts/2024-03-12/Newsletter_02.html",
+    "href": "posts/2024-03-12/Newsletter_02.html",
+    "title": "Newsletter #2",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "inrae-project-website",
-    "section": "List of Financial partners",
-    "text": "List of Financial partners"
+    "section": "",
+    "text": "This is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#logo",
+    "href": "index.html#logo",
+    "title": "inrae-project-website",
+    "section": "Logo",
+    "text": "Logo\n\nInstitut’s logo and Laboratory’s logo\nThe institute and laboratory logos must be placed in the image directory, and the path must be entered in the _quarto.yml file. The institute logo is a hyperlink. When we click on it, the institute web page opens.\n\n\nProject’s logo\nIf you have a project’s logo, insert the image file (.png or .jpg) in the image directory. If you don’t have a project’s logo, simply comment out the margin-header part in YAML (Ctrl+C)."
+  },
+  {
+    "objectID": "index.html#insert-bibliography",
+    "href": "index.html#insert-bibliography",
+    "title": "inrae-project-website",
+    "section": "Insert bibliography",
+    "text": "Insert bibliography\nBibliography citations are inserted using a bibliography in bibtex format. We need to amend the bibliography.bib file in bibtex format to cite the references in our page, using [@reference] .\nExample : Use package InraeTheme (Carayon and Boutry 2024)"
+  },
+  {
+    "objectID": "index.html#creating-web-pages",
+    "href": "index.html#creating-web-pages",
+    "title": "inrae-project-website",
+    "section": "Creating web pages",
+    "text": "Creating web pages\nIn the terminal, we send the following commands to generate web pages.\nquarto render"
+  },
+  {
+    "objectID": "index.html#news",
+    "href": "index.html#news",
+    "title": "inrae-project-website",
+    "section": "News",
+    "text": "News\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n\n\n\nMar 11, 2024\n\n\nNewsletter #1\n\n\nFirst name, Last name\n\n\n\n\n\n\n\nMar 12, 2024\n\n\nNewsletter #2\n\n\nFirst name, Last name\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "inrae-project-website",
+    "section": "",
+    "text": "About this project\n\n\n\n\n\nflowchart LR\n    DB[(Database)]\n    Workpackage1--&gt;DB\n    Workpackage2--&gt;DB\n    DB--&gt;Workpackage3\n    style DB fill:#275662,stroke-width:2px,color:#fff\n    style Workpackage1 fill:#66C1BF,stroke-width:2px,color:#fff\n    style Workpackage2 fill:#66C1BF,stroke-width:2px,color:#fff\n    style Workpackage3 fill:#66C1BF,stroke-width:2px,color:#fff\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "Events",
+    "section": "",
+    "text": "Newsletter #1\n\n\n\n\n\n\nFirst name, Last name\n\n\nMar 11, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewsletter #2\n\n\n\n\n\n\nFirst name, Last name\n\n\nMar 12, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "lipsum.html",
+    "href": "lipsum.html",
+    "title": "inrae-project-website",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "objectID": "publications.html",
@@ -35,66 +91,24 @@
     "text": "WordCloud of keywords’s publications"
   },
   {
-    "objectID": "lipsum.html",
-    "href": "lipsum.html",
+    "objectID": "partners.html#list-of-financial-partners",
+    "href": "partners.html#list-of-financial-partners",
     "title": "inrae-project-website",
+    "section": "List of Financial partners",
+    "text": "List of Financial partners"
+  },
+  {
+    "objectID": "posts/2024-03-11/newsletter_01.html",
+    "href": "posts/2024-03-11/newsletter_01.html",
+    "title": "Newsletter #1",
     "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "text": "Les tributaires instrumentés\nLes différents tributaires du plan d’eau ont aussi été instrumentés. Pas d’inquiétude donc si vous voyez fleurir des étiquettes INRAE. L’objectif est de pouvoir suivre les caractéristiques physicochimiques et les débits de ces différents cours d’eau.\n\n\nDes bouées INRAE sur l’étang\nLe projet de recherche Léon-Bloom qui vise à essayer de comprendre l’origine des proliférations de cyanobactéries sur l’étang de Léon est lancé. Les premières campagnes de terrain se sont déroulées du 4 ou 6 mars. Des bouées ont été positionnées sur l’étang sur lesquelles des sondes de mesures d’oxygène sont accrochées. Merci donc à tous les usagers de les laisser tranquille pour ne pas perturber leur bon fonctionnement.\n\n\nA venir …\nTrès prochainement une plateforme supportant une station météorologique sera également positionnée sur le plan d’eau au niveau de la limite de la réserve."
   },
   {
-    "objectID": "events.html",
-    "href": "events.html",
-    "title": "Events",
+    "objectID": "workpackage2.html",
+    "href": "workpackage2.html",
+    "title": "Description of the workpackage",
     "section": "",
-    "text": "Newsletter #1\n\n\n\n\n\n\nFirst name, Last name\n\n\nMar 11, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewsletter #2\n\n\n\n\n\n\nFirst name, Last name\n\n\nMar 12, 2024\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "inrae-project-website",
-    "section": "",
-    "text": "About this project\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "inrae-project-website",
-    "section": "",
-    "text": "This is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites.\nCreating a French and English website is possible, but requires some special handling. First, you’ll need to create _quarto-langue.yml for each language and a master _quarto.yml.\nThen, in the web pages, specify the language via"
-  },
-  {
-    "objectID": "index.html#logo",
-    "href": "index.html#logo",
-    "title": "inrae-project-website",
-    "section": "Logo",
-    "text": "Logo\n\nInstitut’s logo and Laboratory’s logo\nThe institute and laboratory logos must be placed in the image directory, and the path must be entered in the _quarto.yml file. The institute logo is a hyperlink. When we click on it, the institute web page opens.\n\n\nProject’s logo\nIf you have a project’s logo, insert the image file (.png or .jpg) in the image directory. If you don’t have a project’s logo, simply comment out the margin-header part in YAML (Ctrl+C)."
-  },
-  {
-    "objectID": "index.html#insert-bibliography",
-    "href": "index.html#insert-bibliography",
-    "title": "inrae-project-website",
-    "section": "Insert bibliography",
-    "text": "Insert bibliography\nBibliography citations are inserted using a bibliography in bibtex format. We need to amend the bibliography.bib file in bibtex format to cite the references in our page, using [@reference] .\nExample : Use package InraeTheme (Carayon and Boutry 2024)"
-  },
-  {
-    "objectID": "index.html#creating-web-pages",
-    "href": "index.html#creating-web-pages",
-    "title": "inrae-project-website",
-    "section": "Creating web pages",
-    "text": "Creating web pages\nIn the terminal, we send the following commands to generate web pages for the different languages.\nFirst run with _quarto-english.yml\noutput-dir: ./public/en\nnavbar\n  - href: ../en\nquarto render --profile english\nquarto render --profile francais\nIn a second step, modify the quarto_english.yml output-dir: ./public/en to output-dir: ./public and in the navbar - href: ../en to - href: ./\nSecond run with _quarto-english.yml\noutput-dir: ./public\nnavbar\n  - href: ./"
-  },
-  {
-    "objectID": "index.html#news",
-    "href": "index.html#news",
-    "title": "inrae-project-website",
-    "section": "News",
-    "text": "News"
-  },
-  {
-    "objectID": "posts/2024-03-12/Newsletter_02.html",
-    "href": "posts/2024-03-12/Newsletter_02.html",
-    "title": "Newsletter #2",
-    "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "text": "Description of the workpackage\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   }
 ]

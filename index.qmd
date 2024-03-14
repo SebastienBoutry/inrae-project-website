@@ -3,21 +3,21 @@ margin-header: |
   ![](image/Logo_project.jpg)
 margin-footer: |
   ![](image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg)
+listing:
+  - id: news
+    contents: posts
+    type: table
+    max-items: 5
+    sort: "date"
+    image-height: "50px"
+    fields: [image,date,title,author]
 ---
 
 
 This is a Quarto website.
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
-Creating a French and English website is possible, but requires some special handling. First, you'll need to create _quarto-langue.yml for each language and a master _quarto.yml.
 
-Then, in the web pages, specify the language via 
-
-```
-::: {.content-visible when-profile="english"}
-the required text
-:::
-```
 ## Logo 
 
 ### Institut's logo and Laboratory's logo
@@ -38,30 +38,16 @@ Use package InraeTheme [@Carayon_2024]
 
 ## Creating web pages
 
-In the terminal, we send the following commands to generate web pages for the different languages.
-
-First run with _quarto-english.yml
+In the terminal, we send the following commands to generate web pages.
 ```
-output-dir: ./public/en
-navbar
-  - href: ../en
-```
-
-```
-quarto render --profile english
-quarto render --profile francais
-```
-In a second step, modify the quarto_english.yml output-dir: ./public/en to output-dir: ./public and in the navbar - href: ../en to - href: ./
-
-Second run with _quarto-english.yml
-```
-output-dir: ./public
-navbar
-  - href: ./
+quarto render
 ```
 
 ## News
 
+
+:::{#news}
+:::
 
 ---
 

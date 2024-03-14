@@ -26,10 +26,11 @@ website:
       - href: index.qmd
         text: Home
         icon: house-door-fill
-      - href: about.qmd
-        text: About the project
+      - text: About the project
         icon: house-add-fill
         menu: 
+          - text: About the project
+            href: about.qmd
           - text: "Workpackage 1"
             href: workpackage1.qmd
           - text: "Workpackage 2"
@@ -53,8 +54,9 @@ website:
           - text: Quarto
             href: https://quarto.org
           - text: "INRAE"
-            icon: bookmark-star-fill
             href: https://www.inrae.fr/
+      - text: Licence
+        href: licence.qmd
         
 lang: en
 

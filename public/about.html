@@ -66,6 +66,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -96,11 +99,27 @@ ul.task-list li input[type="checkbox"] {
 </i> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> <i class="bi bi-house-add-fill" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-the-project" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-house-add-fill" role="img">
 </i> 
-<span class="menu-text">About the project</span></a>
+ <span class="menu-text">About the project</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about-the-project">    
+        <li>
+    <a class="dropdown-item" href="./about.html">
+ <span class="dropdown-text">About the project</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./workpackage1.html">
+ <span class="dropdown-text">Workpackage 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./workpackage2.html">
+ <span class="dropdown-text">Workpackage 2</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./events.html"> <i class="bi bi-newspaper" role="img">
 </i> 
@@ -135,12 +154,15 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://www.inrae.fr/"><i class="bi bi-bookmark-star-fill" role="img">
-</i> 
+    <a class="dropdown-item" href="https://www.inrae.fr/">
  <span class="dropdown-text">INRAE</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./licence.html"> 
+<span class="menu-text">Licence</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -166,6 +188,26 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>About this project</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    DB[(Database)]
+    Workpackage1--&gt;DB
+    Workpackage2--&gt;DB
+    DB--&gt;Workpackage3
+    style DB fill:#275662,stroke-width:2px,color:#fff
+    style Workpackage1 fill:#66C1BF,stroke-width:2px,color:#fff
+    style Workpackage2 fill:#66C1BF,stroke-width:2px,color:#fff
+    style Workpackage3 fill:#66C1BF,stroke-width:2px,color:#fff
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
@@ -572,7 +614,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link active" href="./about.html" aria-current="page">
 <p>About the project</p>
 </a>
   </li>  
