@@ -18,7 +18,7 @@ pages:
     - quarto render
   artifacts:
     paths:
-      - public
+      - docs
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
