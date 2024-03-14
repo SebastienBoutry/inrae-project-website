@@ -1,25 +1,24 @@
-on:
-  workflow_dispatch:
-  push:
-    branches: main
+# The Docker image that will be used to build your app
+image: rocker/verse:4.3.1
+pages:
+  stage: deploy
+  script:
+    - sudo apt-get -y update
+    - sudo apt-get install -y libssl-dev
+    - sudo apt-get install -y libcurl4-openssl-dev
+    - sudo apt-get install -y make
+    - sudo apt-get install -y libicu-dev
+    -  R -e "install.packages('htrr2')"
+    -  R -e "install.packages('readr')"
+    -  R -e "install.packages('wordcloud2')"
+    -  R -e "install.packages('tibble')"
+    -  R -e "install.packages('stringr')"
+    -  R -e "install.packages('dplyr')"
+    -  R -e "install.packages('bib2df')"
+    - quarto render
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
-name: Quarto Publish
-
-jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
