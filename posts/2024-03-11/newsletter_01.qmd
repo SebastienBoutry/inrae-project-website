@@ -12,4 +12,4 @@ image: "../../image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg"
 
 # Example
 
-{{< include lipsum.qmd >}}
+{{< include ../../lipsum.qmd >}}
