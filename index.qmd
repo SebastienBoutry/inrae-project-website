@@ -26,7 +26,16 @@ Bibliography citations are inserted using a bibliography in bibtex format. We ne
 Example :
 Use package InraeTheme [@Carayon_2024]
 
+## Website
+
+```
+quarto render --profile english
+quarto render --profile francais
+```
+
 ## News
+
+
 :::
 
 

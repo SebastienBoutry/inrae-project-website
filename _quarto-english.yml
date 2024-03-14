@@ -1,5 +1,5 @@
 project:
-  output-dir: ./public/en
+  output-dir: ./public
   
 website:
   title: "inrae-project-website"
@@ -43,7 +43,7 @@ website:
         href: https://quarto.org
       - href: ../fr
         text: Français
-      - href: ../en
+      - href: ./
         text: English
         
 lang: en
