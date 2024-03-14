@@ -25,7 +25,6 @@ params:
 
 ```{r echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE, error=FALSE, include=FALSE, results="asis"}
 library(httr2)
-library(bibtex)
 library(readr)
 library(wordcloud2)
 library(tibble)
