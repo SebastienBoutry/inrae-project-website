@@ -55,8 +55,8 @@ website:
             href: https://quarto.org
           - text: "INRAE"
             href: https://www.inrae.fr/
-      - text: Licence
-        href: licence.qmd
+      - text: Legal notice
+        href: legal_notice.qmd
         
 lang: en
 

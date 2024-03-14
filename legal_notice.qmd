@@ -1,0 +1,34 @@
+---
+margin-header: |
+  ![](image/Logo_project.jpg)
+margin-footer: |
+  ![](image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg)
+---
+
+## Identification du site
+Nom du site : <nom du projet> 
+URL complète du site : <url du site>
+
+## Éditeur(s) du site
+INRAE - Institut national de recherche pour l’agriculture, l’alimentation et l’environnement
+
+INRAE est un établissement public à caractère scientifique et technologique. Il a son siège au 147, rue de l’université – 75338 Paris cedex 07. Ses statuts sont publiés dans le code rural et de la pêche maritime (articles R831-1 et suivants).
+
+Il est représenté par son Président Directeur général, M. Philippe MAUGUIN.
+Contact mail: web@inrae.fr - contact téléphonique: 01 42 75 90 00
+
+## Numéros d'identification
+INRAE SIREN: 180070039
+Code APE: 7219Z
+Numéro de TVA intracommunautaire: FR 57 1800700039
+
+## Publication du site
+Nom du directeur de publication : M. Philippe MAUGUIN
+Nom du responsable de rédaction : xxxxx
+Webmaster du site : xxx
+
+## Hébergeur du site
+INRAE 
+Établissement public à caractère scientifique et technologique
+147, rue de l’université – 75338 Paris cedex 07
+01 42 75 90 00
