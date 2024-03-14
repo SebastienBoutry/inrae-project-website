@@ -1,5 +1,5 @@
 project:
-  output-dir: ./public
+  output-dir: ./public/fr
   
 website:
   title: "inrae-project-website"
