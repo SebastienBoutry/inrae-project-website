@@ -7,11 +7,11 @@ margin-footer: |
 
 ## Identification du site
 Nom du site : <nom du projet> 
+
 URL complète du site : <url du site>
 
 ## Éditeur(s) du site
 INRAE - Institut national de recherche pour l’agriculture, l’alimentation et l’environnement
-
 INRAE est un établissement public à caractère scientifique et technologique. Il a son siège au 147, rue de l’université – 75338 Paris cedex 07. Ses statuts sont publiés dans le code rural et de la pêche maritime (articles R831-1 et suivants).
 
 Il est représenté par son Président Directeur général, M. Philippe MAUGUIN.

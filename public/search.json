@@ -1,17 +1,59 @@
 [
   {
-    "objectID": "workpackage1.html",
-    "href": "workpackage1.html",
+    "objectID": "workpackage2.html",
+    "href": "workpackage2.html",
     "title": "Description of the workpackage",
     "section": "",
     "text": "Description of the workpackage\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "objectID": "posts/2024-03-12/Newsletter_02.html",
-    "href": "posts/2024-03-12/Newsletter_02.html",
-    "title": "Newsletter #2",
+    "objectID": "posts/2024-03-11/newsletter_01.html",
+    "href": "posts/2024-03-11/newsletter_01.html",
+    "title": "Newsletter #1",
     "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "text": "Les tributaires instrumentés\nLes différents tributaires du plan d’eau ont aussi été instrumentés. Pas d’inquiétude donc si vous voyez fleurir des étiquettes INRAE. L’objectif est de pouvoir suivre les caractéristiques physicochimiques et les débits de ces différents cours d’eau.\n\n\nDes bouées INRAE sur l’étang\nLe projet de recherche Léon-Bloom qui vise à essayer de comprendre l’origine des proliférations de cyanobactéries sur l’étang de Léon est lancé. Les premières campagnes de terrain se sont déroulées du 4 ou 6 mars. Des bouées ont été positionnées sur l’étang sur lesquelles des sondes de mesures d’oxygène sont accrochées. Merci donc à tous les usagers de les laisser tranquille pour ne pas perturber leur bon fonctionnement.\n\n\nA venir …\nTrès prochainement une plateforme supportant une station météorologique sera également positionnée sur le plan d’eau au niveau de la limite de la réserve."
+  },
+  {
+    "objectID": "legal_notice.html",
+    "href": "legal_notice.html",
+    "title": "inrae-project-website",
+    "section": "",
+    "text": "Nom du site : \nURL complète du site :"
+  },
+  {
+    "objectID": "legal_notice.html#identification-du-site",
+    "href": "legal_notice.html#identification-du-site",
+    "title": "inrae-project-website",
+    "section": "",
+    "text": "Nom du site : \nURL complète du site :"
+  },
+  {
+    "objectID": "legal_notice.html#éditeurs-du-site",
+    "href": "legal_notice.html#éditeurs-du-site",
+    "title": "inrae-project-website",
+    "section": "Éditeur(s) du site",
+    "text": "Éditeur(s) du site\nINRAE - Institut national de recherche pour l’agriculture, l’alimentation et l’environnement INRAE est un établissement public à caractère scientifique et technologique. Il a son siège au 147, rue de l’université – 75338 Paris cedex 07. Ses statuts sont publiés dans le code rural et de la pêche maritime (articles R831-1 et suivants).\nIl est représenté par son Président Directeur général, M. Philippe MAUGUIN. Contact mail: web@inrae.fr - contact téléphonique: 01 42 75 90 00"
+  },
+  {
+    "objectID": "legal_notice.html#numéros-didentification",
+    "href": "legal_notice.html#numéros-didentification",
+    "title": "inrae-project-website",
+    "section": "Numéros d’identification",
+    "text": "Numéros d’identification\nINRAE SIREN: 180070039 Code APE: 7219Z Numéro de TVA intracommunautaire: FR 57 1800700039"
+  },
+  {
+    "objectID": "legal_notice.html#publication-du-site",
+    "href": "legal_notice.html#publication-du-site",
+    "title": "inrae-project-website",
+    "section": "Publication du site",
+    "text": "Publication du site\nNom du directeur de publication : M. Philippe MAUGUIN Nom du responsable de rédaction : xxxxx Webmaster du site : xxx"
+  },
+  {
+    "objectID": "legal_notice.html#hébergeur-du-site",
+    "href": "legal_notice.html#hébergeur-du-site",
+    "title": "inrae-project-website",
+    "section": "Hébergeur du site",
+    "text": "Hébergeur du site\nINRAE Établissement public à caractère scientifique et technologique 147, rue de l’université – 75338 Paris cedex 07 01 42 75 90 00"
   },
   {
     "objectID": "index.html",
@@ -98,15 +140,15 @@
     "text": "List of Financial partners"
   },
   {
-    "objectID": "posts/2024-03-11/newsletter_01.html",
-    "href": "posts/2024-03-11/newsletter_01.html",
-    "title": "Newsletter #1",
+    "objectID": "posts/2024-03-12/Newsletter_02.html",
+    "href": "posts/2024-03-12/Newsletter_02.html",
+    "title": "Newsletter #2",
     "section": "",
-    "text": "Les tributaires instrumentés\nLes différents tributaires du plan d’eau ont aussi été instrumentés. Pas d’inquiétude donc si vous voyez fleurir des étiquettes INRAE. L’objectif est de pouvoir suivre les caractéristiques physicochimiques et les débits de ces différents cours d’eau.\n\n\nDes bouées INRAE sur l’étang\nLe projet de recherche Léon-Bloom qui vise à essayer de comprendre l’origine des proliférations de cyanobactéries sur l’étang de Léon est lancé. Les premières campagnes de terrain se sont déroulées du 4 ou 6 mars. Des bouées ont été positionnées sur l’étang sur lesquelles des sondes de mesures d’oxygène sont accrochées. Merci donc à tous les usagers de les laisser tranquille pour ne pas perturber leur bon fonctionnement.\n\n\nA venir …\nTrès prochainement une plateforme supportant une station météorologique sera également positionnée sur le plan d’eau au niveau de la limite de la réserve."
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "objectID": "workpackage2.html",
-    "href": "workpackage2.html",
+    "objectID": "workpackage1.html",
+    "href": "workpackage1.html",
     "title": "Description of the workpackage",
     "section": "",
     "text": "Description of the workpackage\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
