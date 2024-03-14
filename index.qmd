@@ -33,7 +33,6 @@ If you have a project's logo, insert the image file (.png or .jpg) in the image 
 ## Insert bibliography
 
 Bibliography citations are inserted using a bibliography in bibtex format. We need to amend the bibliography.bib file in bibtex format to cite the references in our page, using ```[@reference]``` .
-
 Example :
 Use package InraeTheme [@Carayon_2024]
 
