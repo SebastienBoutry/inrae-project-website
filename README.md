@@ -34,4 +34,79 @@ quarto add xxxxxx
 
 ## How to use it
 
+TO-DO
+
+### Publishing
+
+#### Gitlab Pages using CI/CD
+
+You just need to add a `.gitlab-ci.yml` file to the repository root with this content (you may need to update the package list if you add more R-based content) :
+
+```bash
+# The Docker image that will be used to build your app
+image: rocker/verse:4.3.1
+pages:
+  stage: deploy
+  script:
+    - sudo apt-get -y update
+    - sudo apt-get install -y libssl-dev
+    - sudo apt-get install -y libcurl4-openssl-dev
+    - sudo apt-get install -y make
+    - sudo apt-get install -y libicu-dev
+    -  R -e "install.packages('htrr2')"
+    -  R -e "install.packages('wordcloud2')"
+    -  R -e "install.packages('data.table')"
+    -  R -e "install.packages('bib2df')"
+    - quarto render
+  publish: docs
+  artifacts:
+    paths:
+      - docs
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+```
+
+#### Github Pages using Github Actions
+
+The following `publish.yml` file has to be placed in `.github/workflow/` :
+
+```bash
+on:
+  on:
+  schedule:
+    - cron: '* * 1 * *'
+  workflow_dispatch:
+  push:
+    branches: main
+
+name: Quarto Publish
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+
+      - name: Install R Dependencies
+        uses: r-lib/actions/setup-renv@v2
+        with:
+          cache-version: 1
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+More about Quarto publishing here : <https://quarto.org/docs/publishing/>
+
 ## Real-life examples

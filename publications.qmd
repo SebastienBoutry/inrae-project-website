@@ -8,7 +8,10 @@ nocite: |
 bibliography: API_HAL_project.bib
 ---
 
-This page uses the [HAL Open API](https://api.archives-ouvertes.fr/docs) to automatically query the project's bibliographic references. You will need to fill in the following two parameters in your YAML : `hal_project_name` and `hal_collection`
+This page uses the [HAL Open API](https://api.archives-ouvertes.fr/docs) to automatically query the project's bibliographic references. You will need to fill in the following two parameters in your YAML :
+
+* `hal_project_name` 
+* `hal_collection`
 
 This query relies on the 'Collaboration/Project' field of every HAL upload. To make the best use of this request, you must ensure that this field is always entered consistently with the project acronym (the one you will use in `hal_project_name`).
 
