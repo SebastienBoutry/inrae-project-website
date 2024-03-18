@@ -1,0 +1,9 @@
+---
+title: "Events"
+bibliography: bibliography.bib
+listing:
+  contents: posts
+  type: grid
+  sort: "date"
+  image-height: "200px"
+---

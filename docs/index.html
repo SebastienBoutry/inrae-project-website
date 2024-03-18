@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -148,9 +128,10 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="site_libs/quarto-contrib/quarto-project/inrae-project-website/ressources/styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -177,7 +158,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-the-project" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-house-add-fill" role="img">
+      <i class="bi bi-info-circle" role="img">
 </i> 
  <span class="menu-text">About the project</span>
     </a>
@@ -197,9 +178,9 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./events.html"> <i class="bi bi-newspaper" role="img">
+    <a class="nav-link" href="./news.html"> <i class="bi bi-newspaper" role="img">
 </i> 
-<span class="menu-text">Events</span></a>
+<span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publications.html"> <i class="bi bi-book" role="img">
@@ -214,13 +195,13 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-git" role="img">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-code" role="img">
 </i> 
 <span class="menu-text">Source</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-other-links" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-book" role="img">
+      <i class="bi bi-globe" role="img">
 </i> 
  <span class="menu-text">Other links</span>
     </a>
@@ -246,75 +227,42 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#recent-news" id="toc-recent-news" class="nav-link active" data-scroll-target="#recent-news">Recent news</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 
 
-<p>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<section id="logo" class="level2">
-<h2 class="anchored" data-anchor-id="logo">Logo</h2>
-<section id="instituts-logo-and-laboratorys-logo" class="level3">
-<h3 class="anchored" data-anchor-id="instituts-logo-and-laboratorys-logo">Institut’s logo and Laboratory’s logo</h3>
-<p>The institute and laboratory logos must be placed in the image directory, and the path must be entered in the _quarto.yml file. The institute logo is a hyperlink. When we click on it, the institute web page opens.</p>
-</section>
-<section id="projects-logo" class="level3">
-<h3 class="anchored" data-anchor-id="projects-logo">Project’s logo</h3>
-<p>If you have a project’s logo, insert the image file (.png or .jpg) in the image directory. If you don’t have a project’s logo, simply comment out the margin-header part in YAML (Ctrl+C).</p>
-</section>
-</section>
-<section id="insert-bibliography" class="level2">
-<h2 class="anchored" data-anchor-id="insert-bibliography">Insert bibliography</h2>
-<p>Bibliography citations are inserted using a bibliography in bibtex format. We need to amend the bibliography.bib file in bibtex format to cite the references in our page, using <code>[@reference]</code> . Example : Use package InraeTheme <span class="citation" data-cites="Carayon_2024">(<a href="#ref-Carayon_2024" role="doc-biblioref">Carayon and Boutry 2024</a>)</span></p>
-</section>
-<section id="creating-web-pages" class="level2">
-<h2 class="anchored" data-anchor-id="creating-web-pages">Creating web pages</h2>
-<p>In the terminal, we send the following commands to generate web pages.</p>
-<pre><code>quarto render</code></pre>
-</section>
-<section id="news" class="level2">
-<h2 class="anchored" data-anchor-id="news">News</h2>
+<p>This is a Quarto website made with the inrae-project-website extension.</p>
+<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<p>To learn more about this specific extension visit <a href="https://forgemia.inra.fr/sebastien_boutry/inrae-project-website" class="uri">https://forgemia.inra.fr/sebastien_boutry/inrae-project-website</a></p>
+<p>Here is how to display some content, such as newsletters, as listings :</p>
+<p><br></p>
+<section id="recent-news" class="level2">
+<h2 class="anchored" data-anchor-id="recent-news">Recent news</h2>
 <div id="listing-news" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-news-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-news'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
 <table class="quarto-listing-table table">
 <thead>
 <tr>
 <th>
 </th>
 <th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+Date
 </th>
 <th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+Title
 </th>
 <th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+Author
 </th>
 </tr>
 </thead>
@@ -357,14 +305,9 @@ No matching items
 
 
 
-
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-Carayon_2024" class="csl-entry" role="listitem">
-Carayon, David, and Sébastien Boutry. 2024. <em>InraeThemes: Modèles Et Thèmes INRAE</em>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -756,24 +699,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><a href="https://www.inrae.fr/"><img src="images/Logo-INRAE.jpg" class="img-fluid" width="200"></a></p>
+<p><a href="https://www.inrae.fr/"><img src="images/Logo-INRAE.jpg" class="img-fluid" width="100"></a></p>
 </div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./index.html">
-<p>Home</p>
-</a>
-  </li>  
-    <li class="nav-item">
     <a class="nav-link" href="./legal_notice.html">
-<p>Legal notice</p>
+<p>LEGAL NOTICE</p>
 </a>
   </li>  
 </ul>
     </div>
     <div class="nav-footer-right">
-<p><img src="images/lab-logo.png" class="img-fluid" width="200"></p>
+<p><img src="images/lab-logo.png" class="img-fluid" width="100"></p>
 </div>
   </div>
 </footer>

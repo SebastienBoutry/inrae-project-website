@@ -6,18 +6,17 @@ params:
 nocite: |
   @*
 bibliography: API_HAL_project.bib
-margin-header: |
-  ![](image/Logo_project.jpg)
-margin-footer: |
-  ![](image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg)
 ---
 
-This web page uses the [HAL API](https://api.archives-ouvertes.fr/docs) to retrieve the project's bibliographic references. To do this, you need to fill in the following two parameters (hal_project_name and hal_collection) in the YAML.
-For this request to be successful, it is important to fill in the 'Collaboration/Project' field when submitting to HAL with the project acronym, which will be identical to hal_project_name. The choice of limiting references linked to the project to a target collection.
-The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field.
+This page uses the [HAL Open API](https://api.archives-ouvertes.fr/docs) to automatically query the project's bibliographic references. You will need to fill in the following two parameters in your YAML : `hal_project_name` and `hal_collection`
+
+This query relies on the 'Collaboration/Project' field of every HAL upload. To make the best use of this request, you must ensure that this field is always entered consistently with the project acronym (the one you will use in `hal_project_name`).
+
+The query will automatically append its results to the `API_HAL_project.bib` file.
 
 In the following example, the parameters used in the YAML are
-```
+
+```yaml
 params:
   hal_project_name: "DYLAQ"
   hal_collection: "EABX"
@@ -26,27 +25,27 @@ params:
 
 ```{r echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE, error=FALSE, include=FALSE, results="asis"}
 library(httr2)
-library(readr)
 library(wordcloud2)
-library(tibble)
-library(stringr)
-library(dplyr)
 library(bib2df)
+library(data.table)
 
 ## API call to HAL
-request_project <- paste0("https://api.archives-ouvertes.fr/search/?q=*","&fq=collaboration_s:",params$hal_project_name,
-                          "&fq=collCode_s:",params$hal_collection,
-                          "&rows=10000&wt=bibtex")
-req<-httr2::request(request_project) |>
-  httr2::req_perform() 
+request_project <- paste0(
+    "https://api.archives-ouvertes.fr/search/?q=*", "&fq=collaboration_s:", params$hal_project_name,
+    "&fq=collCode_s:", params$hal_collection,
+    "&rows=10000&wt=bibtex"
+)
+req <- httr2::req_perform(httr2::request(request_project))
 
-if(length(req$body)>0){
-  remove(list = "API_HAL_project.bib")
-  req |> 
-    httr2::resp_body_string() |>
-    unlist() |>
-    readr::write_lines("API_HAL_project.bib")
-}else{
+## Write content to bib file
+if (length(req$body) > 0) {
+
+    file.remove("API_HAL_project.bib")
+        res <- unlist(httr2::resp_body_string(req)) 
+        writeLines(res, "API_HAL_project.bib")
+
+} else {
+
 }
 ```
 
@@ -59,32 +58,43 @@ if(length(req$body)>0){
 
 ---
 
-## WordCloud of keywords's publications
+## WordCloud
 
 ```{r keywords, echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE, results="asis"}
-if(sum(dir() %in% "API_HAL_project.bib")>0){
-df_refs <-bib2df::bib2df("API_HAL_project.bib") |> 
-  tibble::as_tibble()
+if (sum(dir() %in% "API_HAL_project.bib") > 0) {
+    
+        # Read bib content to dataframe
+        df_refs <- bib2df::bib2df("API_HAL_project.bib")
 
-if(nrow(df_refs)>0){
-  tibble::tibble(keywords=df_refs |> 
-                   dplyr::filter(! is.na(KEYWORDS)) |> 
-                   dplyr::pull(KEYWORDS) |> 
-                   stringr::str_to_upper() |> 
-                   paste0(collapse = " ; ") |> 
-                   stringr::str_split(";") |> 
-                   unlist() |> 
-                   stringr::str_trim()) |> 
-    dplyr::count(keywords) |> 
-    wordcloud2::wordcloud2(backgroundColor="#275662",
-                           size=0.2,
-                           color="white",
-                           minRotation = -pi/6,
-                           maxRotation = -pi/6)
-}else{
-  print("no publications based on HAL-INRAE")
-}
-}else{ print("no publications based on HAL-INRAE")}
+        # Convert df_refs to a data.table
+        df_refs_dt <- as.data.table(df_refs)
+
+        # Filter out NA values and convert keywords to upper case
+        keywords <- na.omit(df_refs_dt$KEYWORDS)
+        keywords <- toupper(keywords)
+
+        # Concatenate keywords, split by semicolon, and trim whitespace
+        concatenated_keywords <- paste(keywords, collapse = " ; ")
+        split_keywords <- unlist(strsplit(concatenated_keywords, ";"))
+        trimmed_keywords <- trimws(split_keywords)
+
+        # Create a data.table with keywords
+        keywords_dt <- data.table(keywords = trimmed_keywords)
+
+        # Count occurrences of each keyword
+        keywords_count <- keywords_dt[, .N, by = keywords]
+
+        wordcloud2::wordcloud2(keywords_count,
+            backgroundColor = "#275662",
+            size = 0.2,
+            color = "white",
+            minRotation = -pi / 6,
+            maxRotation = -pi / 6
+        )
+
+    } else {
+        print("no publications based on HAL-INRAE")
+    }
 ```
 
 

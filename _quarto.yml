@@ -1,6 +1,6 @@
 project:
-  type: website
-  output-dir: ./docs
+  type: inrae-project-website
+  output-dir: docs 
   
 # Set language
 lang: en
@@ -19,7 +19,7 @@ website:
         text: Home
         icon: house-door-fill
       - text: About the project
-        icon: house-add-fill
+        icon: info-circle
         menu: 
           - text: About the project
             href: about.qmd
@@ -27,8 +27,8 @@ website:
             href: workpackage1.qmd
           - text: "Workpackage 2"
             href: workpackage2.qmd
-      - href: events.qmd
-        text: Events
+      - href: news.qmd
+        text: News
         icon: newspaper
       - href: publications.qmd
         text: Publications
@@ -38,10 +38,10 @@ website:
         icon: link
     right:
       - text: "Source"
-        icon: git
+        icon: code
         href: https://github.com/
       - text: "Other links"
-        icon: book
+        icon: globe
         menu: 
           - text: Quarto
             href: https://quarto.org
@@ -50,12 +50,12 @@ website:
   ## Footer
   page-footer:
     left: |
-        [![](images/Logo-INRAE.jpg){width=200px}](https://www.inrae.fr/)
+        [![](images/Logo-INRAE.jpg){width=100px}](https://www.inrae.fr/)
     right: |
-        ![](images/lab-logo.png){width=200px}
+        ![](images/lab-logo.png){width=100px}
     center: 
-      - text: Legal notice
-        icon: scale-balanced
+      - text: LEGAL NOTICE
+        icon: book
         href: legal_notice.qmd
       
  

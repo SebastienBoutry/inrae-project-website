@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -93,6 +127,7 @@ div.csl-indent {
 <script src="site_libs/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
 
 
+<link rel="stylesheet" href="site_libs/quarto-contrib/quarto-project/inrae-project-website/ressources/styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -122,7 +157,7 @@ div.csl-indent {
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-the-project" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-house-add-fill" role="img">
+      <i class="bi bi-info-circle" role="img">
 </i> 
  <span class="menu-text">About the project</span>
     </a>
@@ -142,9 +177,9 @@ div.csl-indent {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./events.html"> <i class="bi bi-newspaper" role="img">
+    <a class="nav-link" href="./news.html"> <i class="bi bi-newspaper" role="img">
 </i> 
-<span class="menu-text">Events</span></a>
+<span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./publications.html" aria-current="page"> <i class="bi bi-book" role="img">
@@ -159,13 +194,13 @@ div.csl-indent {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-git" role="img">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-code" role="img">
 </i> 
 <span class="menu-text">Source</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-other-links" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-book" role="img">
+      <i class="bi bi-globe" role="img">
 </i> 
  <span class="menu-text">Other links</span>
     </a>
@@ -191,13 +226,16 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p><img src="image/Logo_project.jpg" class="img-fluid"></p>
-</div></div>
-        
-    <div class="quarto-margin-footer"><div class="margin-footer-item">
-<p><img src="image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg" class="img-fluid"></p>
-</div></div></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#list-of-publications-based-on-hal-inrae" id="toc-list-of-publications-based-on-hal-inrae" class="nav-link active" data-scroll-target="#list-of-publications-based-on-hal-inrae">List of publications (based on HAL-INRAE)</a></li>
+  <li><a href="#wordcloud" id="toc-wordcloud" class="nav-link" data-scroll-target="#wordcloud">WordCloud</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -220,11 +258,13 @@ div.csl-indent {
 </header>
 
 
-<p>This web page uses the <a href="https://api.archives-ouvertes.fr/docs">HAL API</a> to retrieve the project’s bibliographic references. To do this, you need to fill in the following two parameters (hal_project_name and hal_collection) in the YAML. For this request to be successful, it is important to fill in the ‘Collaboration/Project’ field when submitting to HAL with the project acronym, which will be identical to hal_project_name. The choice of limiting references linked to the project to a target collection. The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field.</p>
+<p>This page uses the <a href="https://api.archives-ouvertes.fr/docs">HAL Open API</a> to automatically query the project’s bibliographic references. You will need to fill in the following two parameters in your YAML : <code>hal_project_name</code> and <code>hal_collection</code></p>
+<p>This query relies on the ‘Collaboration/Project’ field of every HAL upload. To make the best use of this request, you must ensure that this field is always entered consistently with the project acronym (the one you will use in <code>hal_project_name</code>).</p>
+<p>The query will automatically append its results to the <code>API_HAL_project.bib</code> file.</p>
 <p>In the following example, the parameters used in the YAML are</p>
-<pre><code>params:
-  hal_project_name: "DYLAQ"
-  hal_collection: "EABX"</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">params</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">hal_project_name</span><span class="kw">:</span><span class="at"> </span><span class="st">"DYLAQ"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">hal_collection</span><span class="kw">:</span><span class="at"> </span><span class="st">"EABX"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="list-of-publications-based-on-hal-inrae" class="level2">
 <h2 class="anchored" data-anchor-id="list-of-publications-based-on-hal-inrae">List of publications (based on HAL-INRAE)</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
@@ -282,10 +322,10 @@ Vedrenne, Jacky, and Aurélien Jamoneau. 2018. <span>“<span class="nocase">Bio
 </div>
 <hr>
 </section>
-<section id="wordcloud-of-keywordss-publications" class="level2">
-<h2 class="anchored" data-anchor-id="wordcloud-of-keywordss-publications">WordCloud of keywords’s publications</h2>
-<div class="wordcloud2 html-widget html-fill-item" id="htmlwidget-3b6cce3ae38d4853da71" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-3b6cce3ae38d4853da71">{"x":{"word":["ALGUE","ALT{\\'E}RATIONS ANTHROPIQUES","AQUITAINE","BIODIVERSIT{\\'E}","BIOVOLUME","CHANGEMENT CLIMATIQUE","CLIMATE WARMING","COMMUNAUT{\\'E","DIATOM BIOTIC","ECOTOXICOLOGY","ESP{\\`E}CES INVASIVES","EUTROPHICATION","EUTROPHISATION","EUTROPHISATION AQUATIQUE","FUNCTIONAL REDUNDANCY","FUNCTIONAL TRAITS","GESTION","GRAZER","INTERACTIONS","LAC","LACS AQUITAINS","LAKE","MACROPHYTE","MANAGEMENT","MEIOFAUNE","MORPHOLOGICAL TRAITS","MULTI STRESS","NEMATODE","NOUVELLE AQUITAINE","OXYG{\\`E}NE","PESTICIDE","PESTICIDE MIXTURE","PESTICIDES","PHYSICO-CHEMICAL","PHYSICO-CHIMIE","PHYTOPLANKTON","PLAN D'EAU","PLANTES AQUATIQUES","RARITY","RESERVOIRS","R{\\'E}CHAUFFEMENT CLIMATIQUE","TOXICITY","TROPHIC RELATION","VULNERABILITY"],"freq":[1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1],"fontFamily":"Segoe UI","fontWeight":"bold","color":"white","minSize":0,"weightFactor":18,"backgroundColor":"#275662","gridSize":0,"minRotation":-0.5235987755982988,"maxRotation":-0.5235987755982988,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<section id="wordcloud" class="level2">
+<h2 class="anchored" data-anchor-id="wordcloud">WordCloud</h2>
+<div class="wordcloud2 html-widget html-fill-item" id="htmlwidget-9359a92a314a97071c07" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-9359a92a314a97071c07">{"x":{"word":["PLAN D'EAU","MACROPHYTE","CHANGEMENT CLIMATIQUE","BIODIVERSIT{\\'E}","LAC","PHYTOPLANKTON","BIOVOLUME","MORPHOLOGICAL TRAITS","TOXICITY","MEIOFAUNE","COMMUNAUT{\\'E","LACS AQUITAINS","PLANTES AQUATIQUES","OXYG{\\`E}NE","ESP{\\`E}CES INVASIVES","ALT{\\'E}RATIONS ANTHROPIQUES","EUTROPHISATION AQUATIQUE","NOUVELLE AQUITAINE","GESTION","PESTICIDE","ALGUE","NEMATODE","DIATOM BIOTIC","INTERACTIONS","PESTICIDES","MULTI STRESS","TROPHIC RELATION","ECOTOXICOLOGY","PESTICIDE MIXTURE","GRAZER","VULNERABILITY","FUNCTIONAL TRAITS","FUNCTIONAL REDUNDANCY","RARITY","RESERVOIRS","AQUITAINE","LAKE","PHYSICO-CHEMICAL","CLIMATE WARMING","EUTROPHICATION","MANAGEMENT","PHYSICO-CHIMIE","R{\\'E}CHAUFFEMENT CLIMATIQUE","EUTROPHISATION"],"freq":[2,1,2,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"fontFamily":"Segoe UI","fontWeight":"bold","color":"white","minSize":0,"weightFactor":18,"backgroundColor":"#275662","gridSize":0,"minRotation":-0.5235987755982988,"maxRotation":-0.5235987755982988,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
 
 
 </section>
@@ -682,24 +722,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><a href="https://www.inrae.fr/"><img src="images/Logo-INRAE.jpg" class="img-fluid" width="200"></a></p>
+<p><a href="https://www.inrae.fr/"><img src="images/Logo-INRAE.jpg" class="img-fluid" width="100"></a></p>
 </div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./index.html">
-<p>Home</p>
-</a>
-  </li>  
-    <li class="nav-item">
     <a class="nav-link" href="./legal_notice.html">
-<p>Legal notice</p>
+<p>LEGAL NOTICE</p>
 </a>
   </li>  
 </ul>
     </div>
     <div class="nav-footer-right">
-<p><img src="images/lab-logo.png" class="img-fluid" width="200"></p>
+<p><img src="images/lab-logo.png" class="img-fluid" width="100"></p>
 </div>
   </div>
 </footer>

@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "inrae-project-website",
     "section": "",
-    "text": "This is a Quarto website. To learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a Quarto website made with the inrae-project-website extension.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nTo learn more about this specific extension visit https://forgemia.inra.fr/sebastien_boutry/inrae-project-website\nHere is how to display some content, such as newsletters, as listings :"
   },
   {
     "objectID": "index.html#logo",
@@ -46,7 +46,7 @@
     "href": "index.html#news",
     "title": "inrae-project-website",
     "section": "News",
-    "text": "News\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n\n\n\nMar 11, 2024\n\n\nNewsletter #1\n\n\nFirst name, Last name\n\n\n\n\n\n\n\nMar 12, 2024\n\n\nNewsletter #2\n\n\nFirst name, Last name\n\n\n\n\n\nNo matching items"
+    "text": "News\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n\n\n\nMar 11, 2024\n\n\nNewsletter #1\n\n\nFirst name, Last name\n\n\n\n\n\n\n\nMar 12, 2024\n\n\nNewsletter #2\n\n\nFirst name, Last name\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2024-03-11/newsletter_01.html",
@@ -116,7 +116,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "This web page uses the HAL API to retrieve the project’s bibliographic references. To do this, you need to fill in the following two parameters (hal_project_name and hal_collection) in the YAML. For this request to be successful, it is important to fill in the ‘Collaboration/Project’ field when submitting to HAL with the project acronym, which will be identical to hal_project_name. The choice of limiting references linked to the project to a target collection. The creation of an API_HAL_project.bib file fills in all the references linked to the hal_project_name, limited by the hal_collection field.\nIn the following example, the parameters used in the YAML are"
+    "text": "This page uses the HAL Open API to automatically query the project’s bibliographic references. You will need to fill in the following two parameters in your YAML : hal_project_name and hal_collection\nThis query relies on the ‘Collaboration/Project’ field of every HAL upload. To make the best use of this request, you must ensure that this field is always entered consistently with the project acronym (the one you will use in hal_project_name).\nThe query will automatically append its results to the API_HAL_project.bib file.\nIn the following example, the parameters used in the YAML are"
   },
   {
     "objectID": "publications.html#list-of-publications-based-on-hal-inrae",
@@ -138,5 +138,26 @@
     "title": "Description of the workpackage 1",
     "section": "",
     "text": "Description of the workpackage 1"
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "Events",
+    "section": "",
+    "text": "Newsletter #1\n\n\n\n\n\n\nFirst name, Last name\n\n\nMar 11, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewsletter #2\n\n\n\n\n\n\nFirst name, Last name\n\n\nMar 12, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#recent-news",
+    "href": "index.html#recent-news",
+    "title": "inrae-project-website",
+    "section": "Recent news",
+    "text": "Recent news\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n\n\n\nMar 11, 2024\n\n\nNewsletter #1\n\n\nFirst name, Last name\n\n\n\n\n\n\n\nMar 12, 2024\n\n\nNewsletter #2\n\n\nFirst name, Last name\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications.html#wordcloud",
+    "href": "publications.html#wordcloud",
+    "title": "Publications",
+    "section": "WordCloud",
+    "text": "WordCloud"
   }
 ]
