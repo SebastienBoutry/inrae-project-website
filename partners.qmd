@@ -1,8 +1,5 @@
 ---
-margin-header: |
-  ![](image/Logo_project.jpg)
-margin-footer: |
-  ![](image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg)
+title: Partners
 ---
 
 ## List of Scientific partners

@@ -6,10 +6,8 @@ categories:
   - Communication
 date: 2024-03-11
 toc: true
-image: "../../image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg"
+image: "Sigle - INRAE.jpg"
 ---
 
 
 # Example
-
-{{< include ../../lipsum.qmd >}}

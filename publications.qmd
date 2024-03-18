@@ -1,4 +1,5 @@
 ---
+title: Publications
 params:
   hal_project_name: "DYLAQ"
   hal_collection: "EABX"

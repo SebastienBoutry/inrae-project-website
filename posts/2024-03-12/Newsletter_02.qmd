@@ -8,6 +8,3 @@ date: 2024-03-12
 toc: true
 image: "news_image.png"
 ---
-
-
-{{< include ../../lipsum.qmd >}}

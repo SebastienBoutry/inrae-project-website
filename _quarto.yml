@@ -54,8 +54,6 @@ website:
     right: |
         ![](images/lab-logo.png){width=200px}
     center: 
-      - href: index.qmd
-        text: Home
       - text: Legal notice
         icon: scale-balanced
         href: legal_notice.qmd

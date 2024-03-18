@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Avenir Next Pro Cn";
-  src: url("Linotype - AvenirNextLTPro-Cn.otf") format("opentype");
+  src: url("ressources/Linotype - AvenirNextLTPro-Cn.otf") format("opentype");
 };
 
 .title {
