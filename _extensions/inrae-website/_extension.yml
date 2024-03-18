@@ -1,0 +1,21 @@
+title: Templates INRAE for research project websites
+author: Sébastien Boutry, David Carayon
+version: 0.0.1
+quarto-version: ">=1.2.0"
+
+  ## Project definition
+project:
+  project:
+    type: website
+  format: inrae-website-html
+
+formats:
+  html: 
+    theme: minty
+    css: styles.css
+    toc: true
+    grid:
+      sidebar-width: 50px
+      body-width: 1150px
+      margin-width: 300px
+      gutter-width: 1.5rem

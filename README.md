@@ -1,6 +1,5 @@
 # Quarto Website project template for INRAE
 
-
 The aim of this quarto extension is to provide a template for creating a project website for INRAE agents.
 
 ## Related work

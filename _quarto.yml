@@ -2,26 +2,18 @@ project:
   type: website
   output-dir: ./docs
   
+# Set language
+lang: en
+
+# Set bibliography source
+bibliography: bibliography.bib
+
+# Set website config and logos
 website:
   title: "inrae-project-website"
-  page-footer:
-    left: |
-        [![](image/VALISE_LOGOTYPE/LOGO/RVB_web/Logo-INRAE.jpg){width=200px}](https://www.inrae.fr/)
-    right: |
-      ![](image/Logo_lab.png){width=200px}
-    center: 
-      - href: index.qmd
-        text: Home
-      - text: "About the project"
-        href: about.qmd
-      - href: events.qmd
-        text: Events
-      - href: publications.qmd
-        text: Publications
-      - href: partners.qmd
-        text: Partners & Sponsors
+  ## Navbar menu
   navbar:
-    logo:  image/Logo_project.jpg
+    logo:  images/project-logo.jpg
     left:
       - href: index.qmd
         text: Home
@@ -55,21 +47,17 @@ website:
             href: https://quarto.org
           - text: "INRAE"
             href: https://www.inrae.fr/
+  ## Footer
+  page-footer:
+    left: |
+        [![](images/Logo-INRAE.jpg){width=200px}](https://www.inrae.fr/)
+    right: |
+        ![](images/lab-logo.png){width=200px}
+    center: 
+      - href: index.qmd
+        text: Home
       - text: Legal notice
+        icon: scale-balanced
         href: legal_notice.qmd
-        
-lang: en
-
-format:
-  html:
-    theme: minty
-    css: styles.css
-    toc: true
-    grid:
-      sidebar-width: 50px
-      body-width: 1150px
-      margin-width: 300px
-      gutter-width: 1.5rem
-    
-bibliography: bibliography.bib
+      
  

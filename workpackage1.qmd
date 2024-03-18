@@ -1,11 +1,4 @@
----
-margin-header: |
-  ![](image/Logo_project.jpg)
-margin-footer: |
-  ![](image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg)
----
-
-# Description of the workpackage
+# Description of the workpackage 1
 
 
-{{< include lipsum.qmd >}}
+

@@ -6,10 +6,6 @@ margin-footer: |
   ![](image/VALISE_LOGOTYPE/SIGLE/RVB_web/Sigle - INRAE.jpg)
 ---
 
-About this project
-
-{{< include lipsum.qmd >}}
-
 ```{mermaid}
 
 flowchart LR
@@ -22,5 +18,3 @@ flowchart LR
     style Workpackage2 fill:#66C1BF,stroke-width:2px,color:#fff
     style Workpackage3 fill:#66C1BF,stroke-width:2px,color:#fff
 ```
-
-{{< include lipsum.qmd >}}
