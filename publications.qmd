@@ -21,8 +21,8 @@ In the following example, the parameters used in the YAML are
 
 ```yaml
 params:
-  hal_project_name: "DYLAQ"
-  hal_collection: "EABX"
+hal_project_name: "DYLAQ"
+hal_collection: "EABX"
 ```
 
 
@@ -34,21 +34,21 @@ library(data.table)
 
 ## API call to HAL
 request_project <- paste0(
-    "https://api.archives-ouvertes.fr/search/?q=*", "&fq=collaboration_s:", params$hal_project_name,
-    "&fq=collCode_s:", params$hal_collection,
-    "&rows=10000&wt=bibtex"
+  "https://api.archives-ouvertes.fr/search/?q=*", "&fq=collaboration_s:", params$hal_project_name,
+  "&fq=collCode_s:", params$hal_collection,
+  "&rows=10000&wt=bibtex"
 )
 req <- httr2::req_perform(httr2::request(request_project))
 
 ## Write content to bib file
 if (length(req$body) > 0) {
-
-    file.remove("API_HAL_project.bib")
-        res <- unlist(httr2::resp_body_string(req)) 
-        writeLines(res, "API_HAL_project.bib")
-
+  
+  file.remove("API_HAL_project.bib")
+  res <- unlist(httr2::resp_body_string(req)) 
+  writeLines(res, "API_HAL_project.bib")
+  
 } else {
-
+  
 }
 ```
 
@@ -64,40 +64,39 @@ if (length(req$body) > 0) {
 ## WordCloud
 
 ```{r keywords, echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE, results="asis"}
-if (sum(dir() %in% "API_HAL_project.bib") > 0) {
-    
-        # Read bib content to dataframe
-        df_refs <- bib2df::bib2df("API_HAL_project.bib")
 
-        # Convert df_refs to a data.table
-        df_refs_dt <- as.data.table(df_refs)
-
-        # Filter out NA values and convert keywords to upper case
-        keywords <- na.omit(df_refs_dt$KEYWORDS)
-        keywords <- toupper(keywords)
-
-        # Concatenate keywords, split by semicolon, and trim whitespace
-        concatenated_keywords <- paste(keywords, collapse = " ; ")
-        split_keywords <- unlist(strsplit(concatenated_keywords, ";"))
-        trimmed_keywords <- trimws(split_keywords)
-
-        # Create a data.table with keywords
-        keywords_dt <- data.table(keywords = trimmed_keywords)
-
-        # Count occurrences of each keyword
-        keywords_count <- keywords_dt[, .N, by = keywords]
-
-        wordcloud2::wordcloud2(keywords_count,
-            backgroundColor = "#275662",
-            size = 0.2,
-            color = "white",
-            minRotation = -pi / 6,
-            maxRotation = -pi / 6
-        )
-
-    } else {
-        print("no publications based on HAL-INRAE")
-    }
+# Read bib content to dataframe
+df_refs <- bib2df::bib2df("API_HAL_project.bib")
+if (nrow(df_refs) > 0) {
+  # Convert df_refs to a data.table
+  df_refs_dt <- as.data.table(df_refs)
+  
+  # Filter out NA values and convert keywords to upper case
+  keywords <- na.omit(df_refs_dt$KEYWORDS)
+  keywords <- toupper(keywords)
+  
+  # Concatenate keywords, split by semicolon, and trim whitespace
+  concatenated_keywords <- paste(keywords, collapse = " ; ")
+  split_keywords <- unlist(strsplit(concatenated_keywords, ";"))
+  trimmed_keywords <- trimws(split_keywords)
+  
+  # Create a data.table with keywords
+  keywords_dt <- data.table(keywords = trimmed_keywords)
+  
+  # Count occurrences of each keyword
+  keywords_count <- keywords_dt[, .N, by = keywords]
+  
+  wordcloud2::wordcloud2(keywords_count,
+                         backgroundColor = "#275662",
+                         size = 0.2,
+                         color = "white",
+                         minRotation = -pi / 6,
+                         maxRotation = -pi / 6
+  )
+  
+} else {
+  print("no publications based on HAL-INRAE")
+}
 ```
 
 
