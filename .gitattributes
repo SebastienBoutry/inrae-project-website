@@ -1,1 +1,2 @@
 *.tex linguist-detectable=false
+*.bib linguist-detectable=false
