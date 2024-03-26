@@ -38,4 +38,4 @@ TO-DO
 
 ## Real-life examples
 
-* [Léon Bloom](https://projets_eabx.pages.mia.inra.fr/leon-bloom/) project 
+* [Léon Bloom](https://projets_eabx.pages.mia.inra.fr/leon-bloom/) project (French website)
