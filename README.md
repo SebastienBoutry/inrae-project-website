@@ -21,7 +21,7 @@ To make the full use of these templates, you will need :
 You will need to do this to get all the folders with all the templates, assets and prefilled quarto templates :
 
 ```bash
-quarto use template xxxxxx
+quarto use template SebastienBoutry/inrae-project-website
 ```
 
 ## Installing for an existing project
@@ -29,7 +29,7 @@ quarto use template xxxxxx
 You may also use this format with an existing project to download only the `_extensions` folder (**not recommended**).
 
 ```bash
-quarto add xxxxxx
+quarto add SebastienBoutry/inrae-project-website
 ```
 
 ## How to use it
