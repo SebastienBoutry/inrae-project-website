@@ -48,15 +48,8 @@ image: rocker/verse:4.3.1
 pages:
   stage: deploy
   script:
-    - sudo apt-get -y update
-    - sudo apt-get install -y libssl-dev
-    - sudo apt-get install -y libcurl4-openssl-dev
-    - sudo apt-get install -y make
-    - sudo apt-get install -y libicu-dev
-    -  R -e "install.packages('htrr2')"
-    -  R -e "install.packages('wordcloud2')"
-    -  R -e "install.packages('data.table')"
-    -  R -e "install.packages('bib2df')"
+    -  R -e "install.packages('pak')"
+    -  R -e "pak::pak(c('wordcloud2','data.table','bib2df','magick'))"
     - quarto render
   publish: docs
   artifacts:
