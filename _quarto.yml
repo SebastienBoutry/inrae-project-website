@@ -1,6 +1,8 @@
 project:
   type: inrae-project-website
-  output-dir: docs 
+  output-dir: docs
+  resources: images
+  
   
 # Set language
 lang: en
