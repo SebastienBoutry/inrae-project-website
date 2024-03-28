@@ -50,9 +50,9 @@ website:
   ## Footer
   page-footer:
     left: |
-        [![](images/Logo-INRAE.jpg){width=100px}](https://www.inrae.fr/)
+        [![](https://www.inrae.fr/themes/custom/inrae_socle/public/images/etat_logo.svg){width=100px}![](https://www.inrae.fr/themes/custom/inrae_socle/logo.svg){width=100px}](https://www.inrae.fr/)
     right: |
-        ![](images/lab-logo.png){width=100px}
+        [![](https://eabx.bordeaux-aquitaine.hub.inrae.fr/var/hub_internet_c22_eabx/storage/images/_aliases/medium/4/6/5/1/41564-1-fre-FR/c982775f2366-logo-eabx.jpg){width=100px}](https://eabx.bordeaux-aquitaine.hub.inrae.fr/)
     center: 
       - text: LEGAL NOTICE
         icon: book
