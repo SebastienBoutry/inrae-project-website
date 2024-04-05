@@ -59,5 +59,8 @@ website:
       - text: LEGAL NOTICE
         icon: book
         href: legal_notice.qmd
+  ## Margin
+  margin-footer: |
+    Made with [![](https://github.com/SebastienBoutry/inrae-project-website/blob/main/images/extension-logo.png?raw=true){width="50px"}](https://github.com/SebastienBoutry/inrae-project-website)
       
  
