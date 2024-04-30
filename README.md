@@ -39,3 +39,4 @@ TO-DO
 ## Real-life examples
 
 * [Léon Bloom](https://projets_eabx.pages.mia.inra.fr/leon-bloom/) project (French website)
+* [Diaspara](https://projets_eabx.pages.mia.inra.fr/diaspara/) project double langages (French and English website)
