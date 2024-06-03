@@ -15,6 +15,9 @@ contributes:
       theme: minty
       css: ressources/styles.css
       toc: true
+      #include-in-header:
+      #- text: |
+          #<script defer ...your umami code></script>
       grid:
         sidebar-width: 50px
         body-width: 1150px
