@@ -144,3 +144,23 @@ footer.footer div.nav-footer p:last-child {
   color: #ed6e6c;
   text-decoration: underline;
 }
+
+pre > code {
+  border: 1px solid #275662;
+  border-right: 3px solid #275662;
+  border-bottom: 3px solid #275662;
+  color: #275662;
+  font-family: monospace;
+  page-break-inside: avoid;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+code {
+  color: #275662;
+}
