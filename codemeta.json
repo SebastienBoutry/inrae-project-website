@@ -1,0 +1,98 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "type": "SoftwareSourceCode",
+    "author": [
+        {
+            "id": "https://orcid.org/0000-0001-8046-585X",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ecosystèmes aquatiques et changements globaux"
+            },
+            "email": "sebastien.boutry@inrae.fr",
+            "familyName": "Boutry",
+            "givenName": "Sébastien"
+        },
+        {
+            "type": "schema:Role",
+            "schema:author": "https://orcid.org/0000-0001-8046-585X",
+            "schema:roleName": "Maintenance"
+        },
+        {
+            "type": "schema:Role",
+            "schema:author": "https://orcid.org/0000-0001-8046-585X",
+            "schema:roleName": "Dévelopeur"
+        },
+        {
+            "id": "https://orcid.org/0000-0003-0217-2175",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ecosystèmes aquatiques et changements globaux"
+            },
+            "familyName": "Carayon",
+            "givenName": "David"
+        },
+        {
+            "type": "schema:Role",
+            "schema:author": "https://orcid.org/0000-0003-0217-2175",
+            "schema:roleName": "Maintenance"
+        },
+        {
+            "type": "schema:Role",
+            "schema:author": "https://orcid.org/0000-0003-0217-2175",
+            "schema:roleName": "Dévelopeur"
+        },
+        {
+            "id": "https://orcid.org/0000-0001-9206-0040",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ecosystèmes aquatiques et changements globaux"
+            },
+            "email": "hilaire.drouineau@inrae.fr",
+            "familyName": "Drouineau",
+            "givenName": "Hilaire"
+        },
+        {
+            "type": "schema:Role",
+            "schema:author": "https://orcid.org/0000-0001-9206-0040",
+            "schema:roleName": "Documentation"
+        },
+        {
+            "id": "https://orcid.org/0000-0003-4207-4107",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Ecosystèmes aquatiques et changements globaux"
+            },
+            "email": "eric.quinton@inrae.fr",
+            "familyName": "Quinton",
+            "givenName": "Eric"
+        },
+        {
+            "type": "schema:Role",
+            "schema:author": "https://orcid.org/0000-0003-4207-4107",
+            "schema:roleName": "Documentation"
+        }
+    ],
+    "dateCreated": "2024-05-30",
+    "description": "The aim of this quarto extension is to provide a template for creating a project website for INRAE researchers and engineers. This is an unofficial and opiniated template.",
+    "funder": {
+        "type": "Organization",
+        "name": "INRAE"
+    },
+    "keywords": [
+        "web",
+        "site",
+        "template"
+    ],
+    "name": "Quarto Website project template for INRAE",
+    "programmingLanguage": [
+        "quarto",
+        "R",
+        "css"
+    ],
+    "version": "1.0.0",
+    "issueTracker": "https://github.com/SebastienBoutry/inrae-project-website"
+}
